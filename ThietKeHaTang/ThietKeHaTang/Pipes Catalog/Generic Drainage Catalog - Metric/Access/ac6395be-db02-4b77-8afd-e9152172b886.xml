@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<LandPart desc="Part Table" version="1.0" xmlns:xlink="http://www.w3.org/1999/xlink" fixColumn="C1">
+	<ColumnConstView desc="Parameter-driven Display" id="CCV1" viewKey="3d" viewName="AeccPartRecipe" pathsRelativeTo="Table">
+		<Images>
+			<Image>
+				<URL xlink:title="Part Reference Image" xlink:href="ac6395be-db02-4b77-8afd-e9152172b886.jpg"/>
+			</Image>
+		</Images>
+		<Recipe>533c6a83-80db-41f8-bec7-53b0493cd680</Recipe>
+	</ColumnConstView>
+	<ColumnUnique desc="Primary Key" datatype="string" name="UUID" visible="0">
+		<RowUnique id="r0">33a7e892-c8ca-036b-ede9-5c7256083b64</RowUnique>
+		<RowUnique id="r1">b87f3985-39e0-9b31-d70e-582c149dc3f9</RowUnique>
+		<RowUnique id="r2">730e2553-8900-6c64-9759-f70b2477558d</RowUnique>
+		<RowUnique id="r3">64ae05ec-a8f9-8c84-9444-846dfe69d9d0</RowUnique>
+		<RowUnique id="r4">433bab7a-5c3f-e56a-3c2a-66bb9ede701b</RowUnique>
+		<RowUnique id="r5">4801087e-c040-21b5-91d0-8d7caf06c63e</RowUnique>
+		<RowUnique id="r6">f90e4919-f68f-a93a-3962-b1417f1c1510</RowUnique>
+		<RowUnique id="r7">a4421ef6-ca50-a4b3-bb13-99f87dd66ac1</RowUnique>
+		<RowUnique id="r8">cf3252d5-a58a-c876-e0be-bf5476394909</RowUnique>
+	</ColumnUnique>
+	<Column desc="Part Size Name" dataType="string" unit="" name="PrtSN" id="C1" visible="1" context="Catalog_PartSizeName" index="0">
+		<Row id="r0">900 mm diameter Riser 600 mm diameter 75 mm high Frame</Row>
+		<Row id="r1">900 mm diameter Riser 600 mm diameter 125 mm high Frame</Row>
+		<Row id="r2">900 mm diameter Riser 600 mm diameter 175 mm high Frame</Row>
+		<Row id="r3">1050 mm diameter Riser 750 mm diameter 75 mm high Frame</Row>
+		<Row id="r4">1050 mm diameter Riser 750 mm diameter 125 mm high Frame</Row>
+		<Row id="r5">1050 mm diameter Riser 750 mm diameter 175 mm high Frame</Row>
+		<Row id="r6">1200 mm diameter Riser 900 mm diameter 75 mm high Frame</Row>
+		<Row id="r7">1200 mm diameter Riser 900 mm diameter 125 mm high Frame</Row>
+		<Row id="r8">1200 mm diameter Riser 900 mm diameter 175 mm high Frame</Row>
+	</Column>
+	<Column desc="Roadway Gutter Slope (Sw)" dataType="float" unit="mm" name="SurfaceStructure_GutterSlope" id="C2" visible="0" context="Geometry_ModelDistanceParameter" index="1">
+		<Row id="r0">0.0000</Row>
+		<Row id="r1">0.0000</Row>
+		<Row id="r2">0.0000</Row>
+		<Row id="r3">0.0000</Row>
+		<Row id="r4">0.0000</Row>
+		<Row id="r5">0.0000</Row>
+		<Row id="r6">0.0000</Row>
+		<Row id="r7">0.0000</Row>
+		<Row id="r8">0.0000</Row>
+	</Column>
+	<Column desc="Inlet Fixed Grate Cross Slope" dataType="float" unit="mm" name="SurfaceStructure_CrossSlope" id="C3" visible="0" context="Geometry_ModelDistanceParameter" index="2">
+		<Row id="r0">0.0000</Row>
+		<Row id="r1">0.0000</Row>
+		<Row id="r2">0.0000</Row>
+		<Row id="r3">0.0000</Row>
+		<Row id="r4">0.0000</Row>
+		<Row id="r5">0.0000</Row>
+		<Row id="r6">0.0000</Row>
+		<Row id="r7">0.0000</Row>
+		<Row id="r8">0.0000</Row>
+	</Column>
+	<Column desc="Surface Structure Diameter" dataType="float" unit="mm" name="SFD" id="C4" visible="1" context="StructFrameDiameter" index="0">
+		<Row id="r0">650.0000</Row>
+		<Row id="r1">650.0000</Row>
+		<Row id="r2">650.0000</Row>
+		<Row id="r3">800.0000</Row>
+		<Row id="r4">800.0000</Row>
+		<Row id="r5">800.0000</Row>
+		<Row id="r6">950.0000</Row>
+		<Row id="r7">950.0000</Row>
+		<Row id="r8">950.0000</Row>
+	</Column>
+	<Column desc="Surface Structure Height" dataType="float" unit="mm" name="SFH" id="C5" visible="1" context="StructFrameHeight" index="0">
+		<Row id="r0">100.0000</Row>
+		<Row id="r1">150.0000</Row>
+		<Row id="r2">200.0000</Row>
+		<Row id="r3">100.0000</Row>
+		<Row id="r4">150.0000</Row>
+		<Row id="r5">200.0000</Row>
+		<Row id="r6">100.0000</Row>
+		<Row id="r7">150.0000</Row>
+		<Row id="r8">200.0000</Row>
+	</Column>
+	<Column desc="Wall thickness of surface structure" dataType="float" unit="mm" name="SurfaceStructure_WallTh" id="C6" visible="0" context="Geometry_ModelDistanceParameter" index="3">
+		<Row id="r0">25.0000</Row>
+		<Row id="r1">25.0000</Row>
+		<Row id="r2">25.0000</Row>
+		<Row id="r3">25.0000</Row>
+		<Row id="r4">25.0000</Row>
+		<Row id="r5">25.0000</Row>
+		<Row id="r6">25.0000</Row>
+		<Row id="r7">25.0000</Row>
+		<Row id="r8">25.0000</Row>
+	</Column>
+	<Column desc="Grate or Cover Port Diameter" dataType="float" unit="mm" name="SurfaceStructure_CGDiameter" id="C7" visible="0" context="Geometry_ModelDistanceParameter" index="4">
+		<Row id="r0">600.0000</Row>
+		<Row id="r1">600.0000</Row>
+		<Row id="r2">600.0000</Row>
+		<Row id="r3">750.0000</Row>
+		<Row id="r4">750.0000</Row>
+		<Row id="r5">750.0000</Row>
+		<Row id="r6">900.0000</Row>
+		<Row id="r7">900.0000</Row>
+		<Row id="r8">900.0000</Row>
+	</Column>
+	<Column desc="Grate or Cover Port Height" dataType="float" unit="mm" name="SurfaceStructure_CGHeight" id="C8" visible="0" context="Geometry_ModelDistanceParameter" index="5">
+		<Row id="r0">50.0000</Row>
+		<Row id="r1">50.0000</Row>
+		<Row id="r2">50.0000</Row>
+		<Row id="r3">50.0000</Row>
+		<Row id="r4">50.0000</Row>
+		<Row id="r5">50.0000</Row>
+		<Row id="r6">50.0000</Row>
+		<Row id="r7">50.0000</Row>
+		<Row id="r8">50.0000</Row>
+	</Column>
+	<Column desc="Underground Structure Port Diameter" dataType="float" unit="mm" name="SurfaceStructure_SPDiameter" id="C9" visible="0" context="Geometry_ModelDistanceParameter" index="6">
+		<Row id="r0">900.0000</Row>
+		<Row id="r1">900.0000</Row>
+		<Row id="r2">900.0000</Row>
+		<Row id="r3">1050.0000</Row>
+		<Row id="r4">1050.0000</Row>
+		<Row id="r5">1050.0000</Row>
+		<Row id="r6">1200.0000</Row>
+		<Row id="r7">1200.0000</Row>
+		<Row id="r8">1200.0000</Row>
+	</Column>
+	<Column desc="Surface Structure Flange Thickness" dataType="float" unit="mm" name="SurfaceStructure_FlangeTh" id="C10" visible="0" context="Geometry_ModelDistanceParameter" index="7">
+		<Row id="r0">25.0000</Row>
+		<Row id="r1">25.0000</Row>
+		<Row id="r2">25.0000</Row>
+		<Row id="r3">25.0000</Row>
+		<Row id="r4">25.0000</Row>
+		<Row id="r5">25.0000</Row>
+		<Row id="r6">25.0000</Row>
+		<Row id="r7">25.0000</Row>
+		<Row id="r8">25.0000</Row>
+	</Column>
+	<Column desc="Structure Port Diameter" dataType="float" unit="mm" name="UndergroundStructure_SPDiameter" id="C11" visible="0" context="Geometry_ModelDistanceParameter" index="8">
+		<Row id="r0">900.0000</Row>
+		<Row id="r1">900.0000</Row>
+		<Row id="r2">900.0000</Row>
+		<Row id="r3">1050.0000</Row>
+		<Row id="r4">1050.0000</Row>
+		<Row id="r5">1050.0000</Row>
+		<Row id="r6">1200.0000</Row>
+		<Row id="r7">1200.0000</Row>
+		<Row id="r8">1200.0000</Row>
+	</Column>
+	<Column desc="Cone Height" dataType="float" unit="mm" name="SCH" id="C12" visible="1" context="StructConeHeight" index="0">
+		<Row id="r0">900.0000</Row>
+		<Row id="r1">900.0000</Row>
+		<Row id="r2">900.0000</Row>
+		<Row id="r3">900.0000</Row>
+		<Row id="r4">900.0000</Row>
+		<Row id="r5">900.0000</Row>
+		<Row id="r6">900.0000</Row>
+		<Row id="r7">900.0000</Row>
+		<Row id="r8">900.0000</Row>
+	</Column>
+	<Column desc="Total Diameter of Structure" dataType="float" unit="mm" name="SBSD" id="C13" visible="1" context="StructDiameter" index="0">
+		<Row id="r0">2200.0000</Row>
+		<Row id="r1">2200.0000</Row>
+		<Row id="r2">2200.0000</Row>
+		<Row id="r3">2200.0000</Row>
+		<Row id="r4">2200.0000</Row>
+		<Row id="r5">2200.0000</Row>
+		<Row id="r6">2200.0000</Row>
+		<Row id="r7">2200.0000</Row>
+		<Row id="r8">2200.0000</Row>
+	</Column>
+	<Column desc="Floor Thickness" dataType="float" unit="mm" name="FTh" id="C14" visible="1" context="FloorThickness" index="0">
+		<Row id="r0">200.0000</Row>
+		<Row id="r1">200.0000</Row>
+		<Row id="r2">200.0000</Row>
+		<Row id="r3">200.0000</Row>
+		<Row id="r4">200.0000</Row>
+		<Row id="r5">200.0000</Row>
+		<Row id="r6">200.0000</Row>
+		<Row id="r7">200.0000</Row>
+		<Row id="r8">200.0000</Row>
+	</Column>
+	<Column desc="Wall Thickness" dataType="float" unit="mm" name="WTh" id="C15" visible="1" context="WallThickness" index="0">
+		<Row id="r0">175.0000</Row>
+		<Row id="r1">175.0000</Row>
+		<Row id="r2">175.0000</Row>
+		<Row id="r3">175.0000</Row>
+		<Row id="r4">175.0000</Row>
+		<Row id="r5">175.0000</Row>
+		<Row id="r6">175.0000</Row>
+		<Row id="r7">175.0000</Row>
+		<Row id="r8">175.0000</Row>
+	</Column>
+	<Column desc="Grate or Cover Height" dataType="float" unit="mm" name="GrateOrCover_CGHeight" id="C16" visible="0" context="Geometry_ModelDistanceParameter" index="9">
+		<Row id="r0">50.0000</Row>
+		<Row id="r1">50.0000</Row>
+		<Row id="r2">50.0000</Row>
+		<Row id="r3">50.0000</Row>
+		<Row id="r4">50.0000</Row>
+		<Row id="r5">50.0000</Row>
+		<Row id="r6">50.0000</Row>
+		<Row id="r7">50.0000</Row>
+		<Row id="r8">50.0000</Row>
+	</Column>
+	<Column desc="Grate or Cover Diameter" dataType="float" unit="mm" name="GrateOrCover_CGDiameter" id="C17" visible="0" context="Geometry_ModelDistanceParameter" index="10">
+		<Row id="r0">600.0000</Row>
+		<Row id="r1">600.0000</Row>
+		<Row id="r2">600.0000</Row>
+		<Row id="r3">750.0000</Row>
+		<Row id="r4">750.0000</Row>
+		<Row id="r5">750.0000</Row>
+		<Row id="r6">900.0000</Row>
+		<Row id="r7">900.0000</Row>
+		<Row id="r8">900.0000</Row>
+	</Column>
+	<ColumnRangeList desc="Rim to Sump Height" dataType="float" unit="mm" name="SRS" id="CCR1" visible="1" context="StructRimToSumpHeight" index="0">
+		<Item id="i0" rangeVal="Min">1425.0000</Item>
+		<Item id="i1" rangeVal="Max">10000000.0000</Item>
+		<Item id="i2" rangeVal="Default">1425.0000</Item>
+	</ColumnRangeList>
+	<ColumnConst desc="Structure Shape" dataType="string" unit="" name="SBS" id="CC0" visible="1" context="StructBoundingShape" index="0">BoundingShape_Cylinder</ColumnConst>
+	<ColumnConst desc="Part Domain" dataType="string" unit="" name="PDom" id="CC1" visible="0" context="Catalog_Domain" index="0">Structure_Domain</ColumnConst>
+	<ColumnConst desc="Part Type" dataType="string" unit="" name="PTyp" id="CC2" visible="1" context="Catalog_PartType" index="0">Struct_Junction</ColumnConst>
+	<ColumnConst desc="Part Subtype" dataType="string" unit="" name="PSTyp" id="CC3" visible="1" context="Catalog_SubType" index="0">Undefined</ColumnConst>
+	<ColumnConst desc="Part Name" dataType="string" unit="" name="PrtNm" id="CC4" visible="0" context="Catalog_PartName" index="0">Eccentric Structures with Circular Frames, 1800 mm Base Structure</ColumnConst>
+	<ColumnConst desc="Part ID" dataType="string" unit="" name="PrtID" id="CC5" visible="0" context="Catalog_PartID" index="0">ac6395be-db02-4b77-8afd-e9152172b886</ColumnConst>
+	<ColumnConst desc="Part Description" dataType="string" unit="" name="PrtD" id="CC6" visible="1" context="Catalog_PartDesc" index="0">Eccentric Structures with Circular Frames, 1800 mm Base Structure</ColumnConst>
+	<ColumnConst desc="Cover" dataType="string" unit="" name="SC" id="CC7" visible="1" context="StructCover" index="0">Cover A</ColumnConst>
+	<ColumnConst desc="Barrel Pipe Clearance" dataType="float" unit="mm" name="SBPC" id="CC8" visible="1" context="StructBarrelPipeClearance" index="0">300.0000</ColumnConst>
+	<ColumnConst desc="Custom Sizing Flag" dataType="bool" unit="" name="CusSF" id="CC9" visible="0" context="CustomPartSizing_Flag" index="0">0</ColumnConst>
+	<ColumnConst desc="Hide Part Flag" dataType="bool" unit="" name="HPrtF" id="CC10" visible="0" context="Catalog_PartHide" index="0">0</ColumnConst>
+	<ColumnConst desc="Data Version" dataType="string" unit="" name="DVer" id="CC11" visible="0" context="DataVersion" index="0">2</ColumnConst>
+	<ColumnConst desc="Model Geometry Engine" dataType="string" unit="" name="MGE" id="CC12" visible="0" context="Geometry_Engine" index="0">Ipt</ColumnConst>
+	<ColumnConst desc="Content Type" dataType="int" unit="" name="CntTy" id="CC13" visible="0" context="Content_Type" index="0">4</ColumnConst>
+	<ColumnCalc desc="Model Distance Parameter" dataType="float" unit="mm" name="SurfaceStructure_SSHeight" id="CCA0" visible="0" context="Geometry_ModelDistanceParameter" index="11">$SFH</ColumnCalc>
+	<ColumnCalc desc="Model Distance Parameter" dataType="float" unit="mm" name="SurfaceStructure_SSDiameter" id="CCA1" visible="0" context="Geometry_ModelDistanceParameter" index="12">$SFD</ColumnCalc>
+	<ColumnCalc desc="Structure wall Thickness" dataType="float" unit="mm" name="UndergroundStructure_WallTh" id="CCA2" visible="0" context="Geometry_ModelDistanceParameter" index="13">$WTh</ColumnCalc>
+	<ColumnCalc desc="Base thickness of catchment structure" dataType="float" unit="mm" name="UndergroundStructure_BaseTh" id="CCA3" visible="0" context="Geometry_ModelDistanceParameter" index="14">$FTh</ColumnCalc>
+	<ColumnCalc desc="Model Distance Parameter" dataType="float" unit="mm" name="UndergroundStructure_USDiameter" id="CCA4" visible="0" context="Geometry_ModelDistanceParameter" index="15">$SBSD</ColumnCalc>
+	<ColumnCalc desc="Structure Height" dataType="float" unit="mm" name="SBSH" id="CCA5" visible="1" context="StructHeight" index="0">$SRS + $FTh</ColumnCalc>
+	<ColumnCalc desc="Structure Assembly Height" dataType="float" unit="mm" name="StructureAssemblyHeight" id="CCA6" visible="0" context="Geometry_ModelDistanceParameter" index="16">$SBSH</ColumnCalc>
+	<ColumnCalc desc="Height of catchment structure" dataType="float" unit="mm" name="UndergroundStructure_USHeight" id="CCA7" visible="0" context="Geometry_ModelDistanceParameter" index="17">$SBSH - $SurfaceStructure_SSHeight</ColumnCalc>
+	<ColumnCalc desc="Inner Structure Diameter" dataType="float" unit="mm" name="SID" id="CCA8" visible="1" context="StructInnerDiameter" index="0">$SBSD - (2 * $WTh)</ColumnCalc>
+	<ColumnCalc desc="Vertical Pipe Clearance" dataType="float" unit="mm" name="SVPC" id="CCA9" visible="1" context="StructVertPipeClearance" index="0">$SBPC + $SFH</ColumnCalc>
+</LandPart>

@@ -1,0 +1,379 @@
+<HTML>
+	<HEAD>
+		<SCRIPT LANGUAGE="JavaScript">
+		
+// ******************************************************************************************** //
+// TODO: Configure variables                                                                                //
+//                                                                                                                            //
+// strCatalog = name of catalog .apc file                                                               //
+// strNestedPathsRelTo = "Catalog" or "Table" (MvParts default to "Table", others to "Catalog"  //
+// strCatalogDomain -- set to matching catalog domain Structure_Domain, Pipe_Domain, etc.     //
+// strRelTblPath -- do not edit, assigned at runtime                                              //
+// ****************************************************************************************** //
+
+// ********************** BEGIN CATALOG CONFIG **************************************************************
+// To configure your catalog, edit the following 3 vars
+//
+var strCatalog                = "US Imperial Structures.apc"
+var strCatalogDomain    = "Structure_Domain"                 // Domain "Structure_Domain, Pipe_Domain, etc.
+//
+// *********************** END CATALOG CONFIG ***************************************************************
+
+var strRelTblPath = "TODO-SetRelPath"         // variable set at runtime
+var strNestedPathsRelTo = "Table"               
+       
+function GetBaseUrl (strFileSpec)
+{
+   var i = strFileSpec.lastIndexOf("\\");
+   var j = strFileSpec.lastIndexOf("/");
+   var len = i > j ? i : j
+   strPath = strFileSpec.substr(0, len+1);
+
+   return(strPath);
+}
+
+function GetBaseName(strFileSpec)
+{
+   var i = strFileSpec.lastIndexOf("\\");
+   var j = strFileSpec.lastIndexOf("/");
+   var l = i > j ? i : j
+   strPath = strFileSpec.substr(0, l+1);
+
+   return(strPath);
+}
+
+
+function reportParseError(error)
+{
+  var strPos = "";
+  for (var i=1; i<error.linepos; i++)
+    strPos += " ";
+
+  strErr = "<font face=Verdana size=2><font size=4><P>XML Error loading '" +  error.url + "'</font>" + "<P><B>" + error.reason + "</B></P></font>";
+
+  if (error.line > 0)
+    strErr += "<font size=3><XMP>" + "at line " + error.line + ", character " + error.linepos + "\n" + error.srcText + "\n" + strPos + "^" + "</XMP></font>";
+
+  return(strErr);
+}
+
+
+function reportRuntimeError(exception)
+{
+  return("<font face=Verdana size=2><font size=4><P>Runtime Error</font>" + "<P><B>" + exception.description + "</B></P></font>");
+}
+
+
+function getUrlArgument(urlStr, argumentStr)
+{
+    argumentStr += "=";
+	var nameStartIndex = urlStr.search(argumentStr);
+	var argStr = new String (argumentStr);
+	var argStrLentgh = argumentStr.length;
+	var value = null;
+	if (nameStartIndex != -1)
+	{
+		nameStartIndex += argStrLentgh;
+		var nameEndIndex = urlStr.indexOf("&", nameStartIndex);
+		if (nameEndIndex != -1)
+			value = urlStr.substr(nameStartIndex, nameEndIndex - nameStartIndex);
+		else
+			value = urlStr.substr(nameStartIndex);
+	}
+	return value;
+}
+
+function InitFrames(strCatalogUrl)
+{
+   //debugger
+
+   var fRet = false;
+   
+   //if (LoadCatalog(strCatalogUrl, WScript.Path))
+   var strCatalogRootPath = "TODO: Set Catalog Root Path"
+   if (LoadCatalog(strCatalogUrl, strCatalogRootPath))
+      fRet = InitNavigationFrame();
+
+   return(fRet);
+}
+
+function LoadCatalog(strCatalogUrl)
+{
+    //debugger
+    
+    // Load the Catalog xml data
+    //        
+    objCatalogXml.XMLDocument.async = false;
+    objCatalogXml.XMLDocument.validateOnParse = false;
+    objCatalogXml.XMLDocument.resolveExternals = true;
+    objCatalogXml.XMLDocument.load(strCatalogUrl);
+
+	//WScript.Echo (WScript.Path);
+	//WScript object;
+	//oTable.setAttribute("catPath", WScript.Path);
+
+    if (objCatalogXml.parseError.errorCode)
+    {
+        fraContent.document.write(reportParseError(objCatalogXml.parseError));
+        return(false);
+    }
+
+    // Load the Catalog style sheet
+    //        
+    objCatalogXsl.XMLDocument.async = false;
+    objCatalogXsl.XMLDocument.validateOnParse = false;
+    objCatalogXsl.XMLDocument.resolveExternals = true;
+    objCatalogXsl.XMLDocument.load("../xsl/AecbCatalog.xsl");
+    if (objCatalogXsl.parseError.errorCode)
+    {
+        fraContent.document.write(reportParseError(objCatalogXsl.parseError));
+        return(false);
+    }
+
+    // Load the Chapter style sheet
+    //        
+    objChapterXsl.XMLDocument.async = false;
+    objChapterXsl.XMLDocument.validateOnParse = false;
+    objChapterXsl.XMLDocument.resolveExternals = true;
+    objChapterXsl.XMLDocument.load("../xsl/AecbChapter.xsl");
+    if (objChapterXsl.parseError.errorCode)
+    {
+        fraContent.document.write(reportParseError(objChapterXsl.parseError));
+        return(false);
+    }
+
+    // Load the Part style sheet
+    //        
+    objPartXsl.XMLDocument.async = false;
+    objPartXsl.XMLDocument.validateOnParse = false;
+    objPartXsl.XMLDocument.resolveExternals = true;
+    objPartXsl.XMLDocument.load("../xsl/AecbPart.xsl");
+    if (objPartXsl.parseError.errorCode)
+    {
+        fraContent.document.write(reportParseError(objPartXsl.parseError));
+        return(false);
+    }
+
+    // Load the Table style sheet
+    //        
+    objTableXsl.XMLDocument.async = false;
+    objTableXsl.XMLDocument.validateOnParse = false;
+    objTableXsl.XMLDocument.resolveExternals = true;
+    objTableXsl.XMLDocument.load("../xsl/AecbTable.xsl");
+    if (objTableXsl.parseError.errorCode)
+    {
+        fraContent.document.write(reportParseError(objTableXsl.parseError));
+        return(false);
+    }
+
+    // Load the Navigation style sheet
+    //        
+    objNavigationXsl.XMLDocument.async = false;
+    objNavigationXsl.XMLDocument.validateOnParse = false;
+    objNavigationXsl.XMLDocument.resolveExternals = true;
+    objNavigationXsl.XMLDocument.load("../xsl/AecbCatalogFrame.xsl");
+    if (objNavigationXsl.parseError.errorCode)
+    {
+        fraNavigation.document.write(reportParseError(objNavigationXsl.parseError));
+        return(false);
+    }
+
+    objSelectViewXsl.XMLDocument.async = false;
+    objSelectViewXsl.XMLDocument.validateOnParse = false;
+    objSelectViewXsl.XMLDocument.resolveExternals = true;
+    objSelectViewXsl.XMLDocument.load("../xsl/AecbSelectView.xsl");
+    if (objSelectViewXsl.parseError.errorCode)
+    {
+        fraNavigation.document.write(reportParseError(objSelectViewXsl.parseError));
+        return(false);
+    }
+       
+    return(true);
+}
+
+function InitNavigationFrame()
+{
+   try
+   {
+	  //debugger
+	  
+	  // parent.frames.length
+	 	  
+      fraNavigation.document.open("text/html", "replace");
+      fraNavigation.document.write(objCatalogXml.transformNode(objNavigationXsl.XMLDocument));
+      fraNavigation.document.all("TreeViewJS").onreadystatechange=selectCatalogItem;
+      fraNavigation.document.close();
+   }
+   catch (exception)
+   {
+      fraNavigation.document.write(reportRuntimeError(exception));
+      return(false);
+   }
+
+   return(true);
+}
+
+
+function selectCatalogItem()
+{
+   //debugger
+
+   if(!fraNavigation.event || !fraNavigation.event.srcElement || (fraNavigation.event.srcElement.readyState=="complete"))
+   {
+      var oCatNode = objCatalogXml.XMLDocument.selectSingleNode("/pXML");
+      if (oCatNode != null)
+      {
+        try
+        {
+			fraNavigation.selectItem(oCatNode.getAttribute("id"));
+		}
+ 		catch (exception)
+		{
+		    fraContent.document.open("text/html", "replace");
+		    fraContent.document.write(reportRuntimeError(exception));
+		    fraContent.document.close();
+		}
+      }
+   }
+   
+   //debugger
+
+
+}
+
+// purpose: displays all xml nodes which have the ID-attribute-value equal to strId.
+// the attached stylesheet obj...Xsl controls the htlm - output
+// called form handleClick() in AecbTreeView.js
+//
+function onSelectionChanged(strId, strParam)
+{
+    //debugger
+    
+    try
+    {
+        if (strParam == "Catalog")
+        {
+            //debugger
+            
+            fraContent.document.open("text/html", "replace");
+            fraContent.document.write(objCatalogXml.transformNode(objCatalogXsl.XMLDocument));
+            fraContent.document.close();
+        }
+        else if (strParam == "Chapter")
+        {
+            //debugger
+            
+            var oFilterNode = objChapterXsl.XMLDocument.selectSingleNode("/xsl:stylesheet/xsl:template[1]");
+            if (oFilterNode)
+            {
+                oFilterNode.setAttribute("match", strParam + "[@id='" + strId + "']");
+                fraContent.document.open("text/html", "replace");
+                fraContent.document.write(objCatalogXml.transformNode(objChapterXsl.XMLDocument));
+                fraContent.document.close();
+            }
+        }
+        else if (strParam == "Part")
+        {
+            //debugger 
+            
+            var oFilterNode = objPartXsl.XMLDocument.selectSingleNode("/xsl:stylesheet/xsl:template[1]");
+            if (oFilterNode)
+            {
+                var strTable = "";
+                var oPartNode = objCatalogXml.XMLDocument.selectSingleNode(".//*[@id='" + strId + "']");
+                if (oPartNode)
+                {
+                    var oTableRefNode = oPartNode.selectSingleNode("TableRef/URL");
+                    if (oTableRefNode)
+                    {
+						// get the part rel path and store for population in package
+                        var strHref = oTableRefNode.getAttribute("xlink:href");
+                        strRelTblPath = strHref;
+                        
+                        var strBase = GetBaseUrl(objCatalogXml.url);
+                        objTableXml.XMLDocument.async = false;
+                        objTableXml.XMLDocument.validateOnParse = false;
+                        objTableXml.XMLDocument.resolveExternals = true;
+                        objTableXml.XMLDocument.load(strBase + strHref);
+                        
+                        if (objTableXml.parseError.errorCode)
+                        {
+                            fraContent.document.open("text/html", "replace");
+                            fraContent.document.write(reportParseError(objTableXml.parseError));
+                            fraContent.document.close();
+                            return;
+                        }
+                        
+                        // Adds attributes for catalog url, catalog guid, part guid
+                        // to the table xml DOM (in memory)
+                        // that we will need for the i-drop package
+                        var oTableNode = objTableXml.XMLDocument.selectSingleNode("/LandPart");
+                        if(oTableNode)
+                        {
+                            oTableNode.setAttribute("partGUID", strId);
+                            oTableNode.setAttribute("catalogURL", objCatalogXml.url);
+                            oTableNode.setAttribute("relPath", strHref);
+                            var catalogGUID = objCatalogXml.XMLDocument.selectSingleNode("/pXML/@id").text
+                            oTableNode.setAttribute("catalogGUID", catalogGUID);
+                        }
+  
+                        strTable = objTableXml.transformNode(objTableXsl.XMLDocument);
+                    }
+                }
+                                
+                oFilterNode.setAttribute("match", strParam + "[@id='" + strId + "']");
+                fraContent.document.open("text/html", "replace");
+                fraContent.document.write(objCatalogXml.transformNode(objPartXsl.XMLDocument) + strTable);
+                                
+                fraContent.document.close();
+           }
+        }
+    }
+    catch (exception)
+    {
+        fraContent.document.open("text/html", "replace");
+        fraContent.document.write(reportRuntimeError(exception));
+        fraContent.document.close();
+    }    
+}
+
+function callDisplayIDropPackage3 (strTitle)  
+{           	
+	var aDialogArgs = new Array(strTitle, strNestedPathsRelTo, strRelTblPath, strCatalogDomain, objTableXml, objIDropObjectXml, objIDropPackageXml);
+	window.showModalDialog('AecbIDrop.htm', aDialogArgs, "dialogHeight:15em;dialogWidth:13;resizable:yes;status:no");
+}                        
+
+function Initialize()
+{   
+   InitFrames(strCatalog);
+}
+      
+function window::onload()
+{
+       Initialize();
+}
+		</SCRIPT>
+	</HEAD>
+	<XML id="objCatalogXml"></XML>
+	<XML id="objCatalogXsl"></XML>
+	<XML id="objChapterXsl"></XML>
+	<XML id="objPartXsl"></XML>
+	<XML id="objTableXml"></XML>
+	<XML id="objTableXsl"></XML>
+	<XML id="objNavigationXsl"></XML>
+	<XML id="objSelectViewXsl"></XML>
+	<XML id="objIDropObjectXml"></XML>
+	<XML id="objIDropPackageXml"></XML>
+	<XML id="objPartRef"></XML>
+	<FRAMESET COLS="40%,*">
+		<FRAME id="fraNavigation" scrolling="no" />
+		<FRAME id="fraContent" />
+		<NOFRAMES>
+			<H1>
+				This page requires frames ...
+			</H1>
+		</NOFRAMES>
+	</FRAMESET>
+	<BODY>
+	</BODY>
+</HTML>

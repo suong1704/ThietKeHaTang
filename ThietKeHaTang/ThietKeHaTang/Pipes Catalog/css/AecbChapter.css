@@ -1,0 +1,69 @@
+/* Chapter.css */
+
+BODY
+{
+   font-family:verdana; font-size:70%;
+   background-color:#DDD;
+   selector-desc:Document BODY;
+}
+
+.clsChapterName
+{
+   font-size:150%;
+   font-family:Verdana;
+   font-weight:bold;
+   text-decoration:underline;
+   text-align:center;
+   color:black;
+}
+
+
+.clsChapterImage
+{
+   margin-top:2em;
+}
+
+/* place description right of the image */
+.clsChapterDesc
+{
+   position:absolute;
+   left:expression(if (document.body.all.tags("IMG")) { document.body.all.tags("IMG")[0].clientWidth + 20 });
+   top:expression(if (document.body.all.tags("IMG")) { document.body.all.tags("IMG")[0].offsetTop });
+   font-size:90%;
+   font-family:Verdana;
+   color:black;
+   background-color:#EEE;
+}
+
+
+.clsChapterLink
+{
+   margin-top:3em;
+}
+
+.clsChapterLink LI
+{
+   list-style-image:url(../images/bullet2.gif);
+}
+
+
+.clsChapterDocuments
+{
+   margin-top:2em;
+}
+
+.clsChapterDocuments UL
+{
+   margin-top:0.5em;      /* margin between "Documents" and begin of list items */
+}
+
+.clsChapterDocuments SPAN
+{
+   font-weight:bold;      /* "Documents" in bold */
+}
+
+
+.clsChapterDocuments LI
+{
+   list-style-image:url(../images/bullet1.gif);
+}

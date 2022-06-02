@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--package xmlns="x-schema:idrop-schema.xml"-->
+<package>
+	<proxy defaultsrc="default.jpg">
+		<caption>Land Part Family iDrop</caption>
+		<img src="default.jpg"/>
+	</proxy>
+	<dataset defaultsrc="default.jpg">
+		<datasrc clipformat="CF_IDROP.AEC2">
+			<datafile src="default.jpg"/>
+			<partfamily xmlns:xlink="http://www.w3.org/1999/xlink" domain="Structure_Domain">
+				<table>
+					<URL xlink:title="Part Table" xlink:href="ToDo.xml" xlink:show="embed" xlink:actuate="onLoad"/>
+				</table>
+				<dwg>
+					<URL xlink:title="Part Drawing" xlink:href="ToDo.dwg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</dwg>
+				<image>
+					<URL xlink:title="Part Image" xlink:href="ToDo.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</image>
+			</partfamily>
+		</datasrc>
+	</dataset>
+</package>

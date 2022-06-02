@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Autodesk Civil 3D Structure Catalog 2004 -->
+<pXML id="EBB33ACE-062C-467F-80A4-51E1F7903201" version="1.0" name="Generic Drainage Catalog - Imperial" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Desc>Generic Drainage Catalog - Imperial</Desc>
+	<DefaultLinearUnits>inch</DefaultLinearUnits>
+	<Images>
+		<Image>
+			<URL xlink:title="Catalog Image" xlink:href="Autodesk Logo.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+		</Image>
+	</Images>
+	<Supplier name="Autodesk">
+		<Desc>Generic Drainage Catalog - Imperial</Desc>
+		<Images>
+			<Image>
+				<URL xlink:title="Logo" xlink:href="Autodesk Logo.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+			</Image>
+		</Images>
+		<Link>
+			<URL xlink:title="Homepage" xlink:href="http://www.autodesk.com" xml:lang="en"/>
+		</Link>
+	</Supplier>
+	<Extrinsics>
+		<Extrinsic>
+			<AeccCIRules>
+				<DomainHierarchy>
+					<Domain>
+						<DomainEnum>Structure_Domain</DomainEnum>
+						<Type>
+							<TypeEnum>Struct_Junction</TypeEnum>
+						</Type>
+					</Domain>
+				</DomainHierarchy>
+				<DomainSet>
+					<DomainEnum>Structure_Domain</DomainEnum>
+				</DomainSet>
+				<TypeSet>
+					<TypeEnum>Struct_Junction</TypeEnum>
+					<TypeEnum>Struct_InletOutlet</TypeEnum>
+					<TypeEnum>Struct_General</TypeEnum>
+				</TypeSet>
+				<SubTypeSet>
+					<SubTypeString>Undefined</SubTypeString>
+				</SubTypeSet>
+				<ShapeSet>
+					<PartShapeEnum>Undefined_Shape</PartShapeEnum>
+					<PartShapeEnum>Round</PartShapeEnum>
+					<PartShapeEnum>Rectangular</PartShapeEnum>
+					<PartShapeEnum>Oval</PartShapeEnum>
+				</ShapeSet>
+				<ConnectionTypeSet>
+					<ConnectionTypeEnum>Undefined_Connection_Type</ConnectionTypeEnum>
+				</ConnectionTypeSet>
+				<MaterialSet/>
+				<GaugeSet/>
+				<ParameterContextSet/>
+				<ParameterSet>
+					<ParameterString>BTRowID</ParameterString>
+					<ParameterString>PrtSN</ParameterString>
+					<ParameterString>SurfaceStructure_GutterSlope</ParameterString>
+					<ParameterString>SurfaceStructure_CrossSlope</ParameterString>
+					<ParameterString>SFD</ParameterString>
+					<ParameterString>SFH</ParameterString>
+					<ParameterString>SurfaceStructure_WallTh</ParameterString>
+					<ParameterString>SurfaceStructure_CGDiameter</ParameterString>
+					<ParameterString>SurfaceStructure_CGHeight</ParameterString>
+					<ParameterString>SurfaceStructure_SPDiameter</ParameterString>
+					<ParameterString>SurfaceStructure_FlangeTh</ParameterString>
+					<ParameterString>SBSL</ParameterString>
+					<ParameterString>SBSW</ParameterString>
+					<ParameterString>UndergroundStructure_USBaseHeight</ParameterString>
+					<ParameterString>FTh</ParameterString>
+					<ParameterString>WTh</ParameterString>
+					<ParameterString>UndergroundStructure_SPDiameter</ParameterString>
+					<ParameterString>GrateOrCover_CGHeight</ParameterString>
+					<ParameterString>GrateOrCover_CGDiameter</ParameterString>
+					<ParameterString>SRS</ParameterString>
+					<ParameterString>SBS</ParameterString>
+					<ParameterString>PDom</ParameterString>
+					<ParameterString>PTyp</ParameterString>
+					<ParameterString>PSTyp</ParameterString>
+					<ParameterString>PrtNm</ParameterString>
+					<ParameterString>PrtID</ParameterString>
+					<ParameterString>PrtD</ParameterString>
+					<ParameterString>SC</ParameterString>
+					<ParameterString>SBPC</ParameterString>
+					<ParameterString>CusSF</ParameterString>
+					<ParameterString>HPrtF</ParameterString>
+					<ParameterString>DVer</ParameterString>
+					<ParameterString>MGE</ParameterString>
+					<ParameterString>CntTy</ParameterString>
+					<ParameterString>CatID</ParameterString>
+					<ParameterString>UndergroundStructure_USLength</ParameterString>
+					<ParameterString>UndergroundStructure_USWidth</ParameterString>
+					<ParameterString>SurfaceStructure_SSHeight</ParameterString>
+					<ParameterString>SurfaceStructure_SSDiameter</ParameterString>
+					<ParameterString>UndergroundStructure_WallTh</ParameterString>
+					<ParameterString>UndergroundStructure_BaseTh</ParameterString>
+					<ParameterString>SBSH</ParameterString>
+					<ParameterString>StructureAssemblyHeight</ParameterString>
+					<ParameterString>UndergroundStructure_USHeight</ParameterString>
+					<ParameterString>SIW</ParameterString>
+					<ParameterString>SIL</ParameterString>
+					<ParameterString>SVPC</ParameterString>
+					<ParameterString>SCH</ParameterString>
+					<ParameterString>SBSD</ParameterString>
+					<ParameterString>UndergroundStructure_USDiameter</ParameterString>
+					<ParameterString>SID</ParameterString>
+					<ParameterString>SurfaceStructure_SPLength</ParameterString>
+					<ParameterString>SurfaceStructure_SPWidth</ParameterString>
+					<ParameterString>SFL</ParameterString>
+					<ParameterString>SFW</ParameterString>
+					<ParameterString>SurfaceStructure_CGLength</ParameterString>
+					<ParameterString>SurfaceStructure_CGWidth</ParameterString>
+					<ParameterString>GrateOrCover_CGLength</ParameterString>
+					<ParameterString>GrateOrCover_CGWidth</ParameterString>
+					<ParameterString>SG</ParameterString>
+					<ParameterString>SurfaceStructure_SSLength</ParameterString>
+					<ParameterString>SurfaceStructure_SSWidth</ParameterString>
+				</ParameterSet>
+				<UnitsSet>
+					<UnitsEnum/>
+					<UnitsEnum>inch</UnitsEnum>
+					<UnitsEnum>ft</UnitsEnum>
+					<UnitsEnum>mm</UnitsEnum>
+					<UnitsEnum>cm</UnitsEnum>
+					<UnitsEnum>m</UnitsEnum>
+					<UnitsEnum>deg</UnitsEnum>
+					<UnitsString>in</UnitsString>
+				</UnitsSet>
+				<RelativePathPreference>Table</RelativePathPreference>
+			</AeccCIRules>
+		</Extrinsic>
+	</Extrinsics>
+	<Chapter name="Access">Access
+		<Desc>Access</Desc>
+		<Part name="Rectangular Structure 2-Tier Circular Frame, 48 inch Base Structure" id="23fb4828-56f1-4a65-86e9-9c78b52e88fc">
+			<Desc>Rectangular Structure 2-Tier Circular Frame, 48 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Structure 2-Tier Circular Frame, 48 inch Base Structure" xlink:href="Access\23fb4828-56f1-4a65-86e9-9c78b52e88fc.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\23fb4828-56f1-4a65-86e9-9c78b52e88fc.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Concentric Structures with Circular Frames, 48 inch Base Structure" id="344d97aa-eb67-493c-9882-3cd5651b6f5c">
+			<Desc>Concentric Structures with Circular Frames, 48 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concentric Structures with Circular Frames, 48 inch Base Structure" xlink:href="Access\344d97aa-eb67-493c-9882-3cd5651b6f5c.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\344d97aa-eb67-493c-9882-3cd5651b6f5c.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric 2-Tier Structures with Circular Frames, 72 inch Base Structure" id="4a67fde9-84dd-4e60-885a-3171198d8cc1">
+			<Desc>Eccentric 2-Tier Structures with Circular Frames, 72 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric 2-Tier Structures with Circular Frames, 72 inch Base Structure" xlink:href="Access\4a67fde9-84dd-4e60-885a-3171198d8cc1.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\4a67fde9-84dd-4e60-885a-3171198d8cc1.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Circular_Covered_Frame_on_Round_Structure_Imperial" id="556ad75c-bb04-4771-8285-cb4f18be2072">
+			<Desc>Circular Covered Frame on Round Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Circular Covered Frame on Round Structure" xlink:href="Access\556ad75c-bb04-4771-8285-cb4f18be2072.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\556ad75c-bb04-4771-8285-cb4f18be2072.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric 2-Tier Structures with Circular Frames, 60 inch Base Structure" id="5781d368-1d30-4c19-887c-318f2b1b832f">
+			<Desc>Eccentric 2-Tier Structures with Circular Frames, 60 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric 2-Tier Structures with Circular Frames, 60 inch Base Structure" xlink:href="Access\5781d368-1d30-4c19-887c-318f2b1b832f.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\5781d368-1d30-4c19-887c-318f2b1b832f.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric 2-Tier Structures with Circular Frames, 48 inch Base Structure" id="5f992844-0ed6-4f64-8979-bc0b31b1eafa">
+			<Desc>Eccentric 2-Tier Structures with Circular Frames, 48 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric 2-Tier Structures with Circular Frames, 48 inch Base Structure" xlink:href="Access\5f992844-0ed6-4f64-8979-bc0b31b1eafa.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\5f992844-0ed6-4f64-8979-bc0b31b1eafa.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Rectangular Structure 2-Tier Circular Frame, 60 inch Base Structure" id="6a162a07-51b4-4c66-94fc-60d1d6c0ce99">
+			<Desc>Rectangular Structure 2-Tier Circular Frame, 60 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Structure 2-Tier Circular Frame, 60 inch Base Structure" xlink:href="Access\6a162a07-51b4-4c66-94fc-60d1d6c0ce99.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\6a162a07-51b4-4c66-94fc-60d1d6c0ce99.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Cylindrical Structures with Slab Top Circular Frames, 60-84 inch Base Structure" id="7b096525-f9a9-4221-9800-49c246b8fa6f">
+			<Desc>Cylindrical Structures with Slab Top Circular Frames, 60-84 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Cylindrical Structures with Slab Top Circular Frames, 60-84 inch Base Structure" xlink:href="Access\7b096525-f9a9-4221-9800-49c246b8fa6f.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\7b096525-f9a9-4221-9800-49c246b8fa6f.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Rectangular Structures with Slab Top Circular Frames" id="828c740b-8133-4751-8b40-461bf29a7534">
+			<Desc>Rectangular Structures with Slab Top Circular Frames</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Structures with Slab Top Circular Frames" xlink:href="Access\828c740b-8133-4751-8b40-461bf29a7534.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\828c740b-8133-4751-8b40-461bf29a7534.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Concentric Structures with Circular Frames, 72 inch Base Structure" id="8296be81-109d-4124-acb9-35f34e8d109a">
+			<Desc>Concentric Structures with Circular Frames, 72 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concentric Structures with Circular Frames, 72 inch Base Structure" xlink:href="Access\8296be81-109d-4124-acb9-35f34e8d109a.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\8296be81-109d-4124-acb9-35f34e8d109a.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric Structures with Circular Frames, 48 inch Base Structure" id="8dfe6c4e-b6f1-4c6b-8591-a459ea6c49cc">
+			<Desc>Eccentric Structures with Circular Frames, 48 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric Structures with Circular Frames, 48 inch Base Structure" xlink:href="Access\8dfe6c4e-b6f1-4c6b-8591-a459ea6c49cc.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\8dfe6c4e-b6f1-4c6b-8591-a459ea6c49cc.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric Structures with Circular Frames, 60 inch Base Structure" id="8e70683c-fee7-47b1-b671-ed1d3cf4a206">
+			<Desc>Eccentric Structures with Circular Frames, 60 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric Structures with Circular Frames, 60 inch Base Structure" xlink:href="Access\8e70683c-fee7-47b1-b671-ed1d3cf4a206.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\8e70683c-fee7-47b1-b671-ed1d3cf4a206.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Rectangular Structure 2-Tier Circular Frame, 84 inch Base Structure" id="8f36e644-b941-4446-96c0-426d96018216">
+			<Desc>Rectangular Structure 2-Tier Circular Frame, 84 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Structure 2-Tier Circular Frame, 84 inch Base Structure" xlink:href="Access\8f36e644-b941-4446-96c0-426d96018216.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\8f36e644-b941-4446-96c0-426d96018216.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric 2-Tier Structures with Circular Frames, 96 inch Base Structure" id="90558f4c-8a91-4152-bcda-033a3ff37ca9">
+			<Desc>Eccentric 2-Tier Structures with Circular Frames, 96 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric 2-Tier Structures with Circular Frames, 96 inch Base Structure" xlink:href="Access\90558f4c-8a91-4152-bcda-033a3ff37ca9.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\90558f4c-8a91-4152-bcda-033a3ff37ca9.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric Structures with Circular Frames, 72 inch Base Structure" id="abe53eec-6b06-40a1-a1ae-3f04fcf44576">
+			<Desc>Eccentric Structures with Circular Frames, 72 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric Structures with Circular Frames, 72 inch Base Structure" xlink:href="Access\abe53eec-6b06-40a1-a1ae-3f04fcf44576.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\abe53eec-6b06-40a1-a1ae-3f04fcf44576.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Rectangular Structure 2-Tier Circular Frame, 72 inch Base Structure" id="d8d006d7-22cb-43b5-a4fd-78f388683f78">
+			<Desc>Rectangular Structure 2-Tier Circular Frame, 72 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Structure 2-Tier Circular Frame, 72 inch Base Structure" xlink:href="Access\d8d006d7-22cb-43b5-a4fd-78f388683f78.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\d8d006d7-22cb-43b5-a4fd-78f388683f78.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Concentric Structures with Circular Frames, 60 inch Base Structure" id="ed440cad-33cc-4c6b-89d4-f09626452e2c">
+			<Desc>Concentric Structures with Circular Frames, 60 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concentric Structures with Circular Frames, 60 inch Base Structure" xlink:href="Access\ed440cad-33cc-4c6b-89d4-f09626452e2c.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\ed440cad-33cc-4c6b-89d4-f09626452e2c.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Cylindrical Structures with Slab Top Circular Frames, 36-54 inch Base Structure" id="f7271142-0461-4e78-a937-719b6859a495">
+			<Desc>Cylindrical Structures with Slab Top Circular Frames, 36-54 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Cylindrical Structures with Slab Top Circular Frames, 36-54 inch Base Structure" xlink:href="Access\f7271142-0461-4e78-a937-719b6859a495.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Access\f7271142-0461-4e78-a937-719b6859a495.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+	</Chapter>
+	<Chapter name="Inlet">Inlet
+		<Desc>Inlet</Desc>
+		<Part name="Concentric Structures with Rectangular Frames, 60 inch Base Structure" id="07d7b354-19b6-491a-b879-4282b87afde9">
+			<Desc>Concentric Structures with Rectangular Frames, 60 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concentric Structures with Rectangular Frames, 60 inch Base Structure" xlink:href="Inlet\07d7b354-19b6-491a-b879-4282b87afde9.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\07d7b354-19b6-491a-b879-4282b87afde9.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Rectangular Structure 2-Tier Rectangular Frame, 48 inch Base Structure" id="08a7fe34-2a44-4512-8e8c-a9e1b191bc40">
+			<Desc>Rectangular Structure 2-Tier Rectangular Frame, 48 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Structure 2-Tier Rectangular Frame, 48 inch Base Structure" xlink:href="Inlet\08a7fe34-2a44-4512-8e8c-a9e1b191bc40.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\08a7fe34-2a44-4512-8e8c-a9e1b191bc40.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Rectangular_Frame_and_Grate_on_Round_Catch_Basin_Imperial" id="0efde8ca-0a7d-4c8b-af20-e274f7664e4a">
+			<Desc>Rectangular Frame and Grate on Round Catch Basin</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Frame and Grate on Round Catch Basin" xlink:href="Inlet\0efde8ca-0a7d-4c8b-af20-e274f7664e4a.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\0efde8ca-0a7d-4c8b-af20-e274f7664e4a.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Concentric Structures with Rectangular Frames, 72 inch Base Structure" id="14828ce1-27a3-4149-95e1-503161a7536d">
+			<Desc>Concentric Structures with Rectangular Frames, 72 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concentric Structures with Rectangular Frames, 72 inch Base Structure" xlink:href="Inlet\14828ce1-27a3-4149-95e1-503161a7536d.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\14828ce1-27a3-4149-95e1-503161a7536d.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric 2-Tier Structures with Rectangular Frames, 60 inch Base Structure" id="16eac838-9e5a-4415-80d3-5456f72909e2">
+			<Desc>Eccentric 2-Tier Structures with Rectangular Frames, 60 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric 2-Tier Structures with Rectangular Frames, 60 inch Base Structure" xlink:href="Inlet\16eac838-9e5a-4415-80d3-5456f72909e2.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\16eac838-9e5a-4415-80d3-5456f72909e2.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Rectangular_Inlet_Frame_and_Grate_on_Rectangular_Catch_Basin_Imperial" id="1bad562b-555d-4e60-976e-f16b9e957a2b">
+			<Desc>Rectangular Inlet Frame and Grate on Rectangular Catch Basin</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Inlet Frame and Grate on Rectangular Catch Basin" xlink:href="Inlet\1bad562b-555d-4e60-976e-f16b9e957a2b.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\1bad562b-555d-4e60-976e-f16b9e957a2b.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Square Structures with Slab Top Rectangular Frames" id="22b18458-8d28-4454-82fb-8119316a46e8">
+			<Desc>Square Structures with Slab Top Rectangular Frames</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Square Structures with Slab Top Rectangular Frames" xlink:href="Inlet\22b18458-8d28-4454-82fb-8119316a46e8.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\22b18458-8d28-4454-82fb-8119316a46e8.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric Structures with Rectangular Frames, 48 inch Base Structure" id="2b4b83ac-3c33-489f-a8dc-a09f676eb7be">
+			<Desc>Eccentric Structures with Rectangular Frames, 48 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric Structures with Rectangular Frames, 48 inch Base Structure" xlink:href="Inlet\2b4b83ac-3c33-489f-a8dc-a09f676eb7be.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\2b4b83ac-3c33-489f-a8dc-a09f676eb7be.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric Structures with Rectangular Frames, 96 inch Base Structure" id="3f870b2f-d903-413d-98a6-807c953dff1f">
+			<Desc>Eccentric Structures with Rectangular Frames, 96 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric Structures with Rectangular Frames, 96 inch Base Structure" xlink:href="Inlet\3f870b2f-d903-413d-98a6-807c953dff1f.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\3f870b2f-d903-413d-98a6-807c953dff1f.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric 2-Tier Structures with Rectangular Frames, 96 inch Base Structure" id="72de141d-79b8-4995-9315-cba54779444b">
+			<Desc>Eccentric 2-Tier Structures with Rectangular Frames, 96 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric 2-Tier Structures with Rectangular Frames, 96 inch Base Structure" xlink:href="Inlet\72de141d-79b8-4995-9315-cba54779444b.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\72de141d-79b8-4995-9315-cba54779444b.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Rectangular Structure 2-Tier Rectangular Frame, 84 inch Base Structure" id="78f3fc84-93e5-4add-ae7f-4ac5a3dde1cb">
+			<Desc>Rectangular Structure 2-Tier Rectangular Frame, 84 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Structure 2-Tier Rectangular Frame, 84 inch Base Structure" xlink:href="Inlet\78f3fc84-93e5-4add-ae7f-4ac5a3dde1cb.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\78f3fc84-93e5-4add-ae7f-4ac5a3dde1cb.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Rectangular Structure 2-Tier Rectangular Frame, 60 inch Base Structure" id="7925f400-8126-4003-a02f-63d201ab5b19">
+			<Desc>Rectangular Structure 2-Tier Rectangular Frame, 60 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Structure 2-Tier Rectangular Frame, 60 inch Base Structure" xlink:href="Inlet\7925f400-8126-4003-a02f-63d201ab5b19.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\7925f400-8126-4003-a02f-63d201ab5b19.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric 2-Tier Structures with Rectangular Frames, 72 inch Base Structure" id="7af416c6-1f39-49aa-95d2-312a8aa534c9">
+			<Desc>Eccentric 2-Tier Structures with Rectangular Frames, 72 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric 2-Tier Structures with Rectangular Frames, 72 inch Base Structure" xlink:href="Inlet\7af416c6-1f39-49aa-95d2-312a8aa534c9.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\7af416c6-1f39-49aa-95d2-312a8aa534c9.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Cylindrical Structures with Slab Top Rectangular Frames, 60-72 inch Base Structure" id="807b563e-e9f4-411f-a6d6-7cd1a9237dc2">
+			<Desc>Cylindrical Structures with Slab Top Rectangular Frames, 60-72 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Cylindrical Structures with Slab Top Rectangular Frames, 60-72 inch Base Structure" xlink:href="Inlet\807b563e-e9f4-411f-a6d6-7cd1a9237dc2.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\807b563e-e9f4-411f-a6d6-7cd1a9237dc2.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric Structures with Rectangular Frames, 60 inch Base Structure" id="909bf19e-d901-4a73-a8cc-ab55b967a126">
+			<Desc>Eccentric Structures with Rectangular Frames, 60 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric Structures with Rectangular Frames, 60 inch Base Structure" xlink:href="Inlet\909bf19e-d901-4a73-a8cc-ab55b967a126.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\909bf19e-d901-4a73-a8cc-ab55b967a126.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric Structures with Rectangular Frames, 72 inch Base Structure" id="b8e9a7c6-9591-4db0-885c-55cec3e75147">
+			<Desc>Eccentric Structures with Rectangular Frames, 72 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric Structures with Rectangular Frames, 72 inch Base Structure" xlink:href="Inlet\b8e9a7c6-9591-4db0-885c-55cec3e75147.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\b8e9a7c6-9591-4db0-885c-55cec3e75147.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Concentric Structures with Rectangular Frames, 48 inch Base Structure" id="ccb28bf1-49bc-49b0-bc72-83e712d53fbf">
+			<Desc>Concentric Structures with Rectangular Frames, 48 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concentric Structures with Rectangular Frames, 48 inch Base Structure" xlink:href="Inlet\ccb28bf1-49bc-49b0-bc72-83e712d53fbf.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\ccb28bf1-49bc-49b0-bc72-83e712d53fbf.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Cylindrical Structures with Slab Top Rectangular Frames, 36-54 inch Base Structure" id="da285c73-33b2-4437-9630-cd9cc0a65aa2">
+			<Desc>Cylindrical Structures with Slab Top Rectangular Frames, 36-54 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Cylindrical Structures with Slab Top Rectangular Frames, 36-54 inch Base Structure" xlink:href="Inlet\da285c73-33b2-4437-9630-cd9cc0a65aa2.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\da285c73-33b2-4437-9630-cd9cc0a65aa2.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Eccentric 2-Tier Structures with Rectangular Frames, 48 inch Base Structure" id="e700bb09-8ddb-4a14-84d6-6a961303c0b1">
+			<Desc>Eccentric 2-Tier Structures with Rectangular Frames, 48 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric 2-Tier Structures with Rectangular Frames, 48 inch Base Structure" xlink:href="Inlet\e700bb09-8ddb-4a14-84d6-6a961303c0b1.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\e700bb09-8ddb-4a14-84d6-6a961303c0b1.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Rectangular Structure 2-Tier Rectangular Frame, 72 inch Base Structure" id="e86909bc-022b-49df-8b12-7509fb54b5c7">
+			<Desc>Rectangular Structure 2-Tier Rectangular Frame, 72 inch Base Structure</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Structure 2-Tier Rectangular Frame, 72 inch Base Structure" xlink:href="Inlet\e86909bc-022b-49df-8b12-7509fb54b5c7.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\e86909bc-022b-49df-8b12-7509fb54b5c7.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="Rectangular Structures with Slab Top Rectangular Frames" id="fdf79253-31e2-45e9-865e-c94552ec493c">
+			<Desc>Rectangular Structures with Slab Top Rectangular Frames</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Structures with Slab Top Rectangular Frames" xlink:href="Inlet\fdf79253-31e2-45e9-865e-c94552ec493c.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet\fdf79253-31e2-45e9-865e-c94552ec493c.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+	</Chapter>
+</pXML>

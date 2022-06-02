@@ -1,0 +1,216 @@
+<!-- Copyright 2000, 2001, 2002 Autodesk -->
+<HTML>
+	<HEAD>
+		<SCRIPT>document.title = "Autodesk I-Drop Object";</SCRIPT>
+		<SCRIPT TYPE="text/javascript" LANGUAGE="javascript" SRC="../js/AecbContentBrowserlib.js"></SCRIPT>
+	</HEAD>
+	<BODY>
+		<OBJECT id="idropObj" width="200" height="200" classid="clsid:21E0CB95-1198-4945-A3D2-4BF804295F78" VIEWASTEXT>
+		</OBJECT>
+		<SCRIPT type="text/javascript">
+         var strTablePath                 = dialogArguments[0];      // path to xml part table
+         var strBaseUrlRelTo           = dialogArguments[1];      // nested paths relative to catalog .apc or table .xml
+         var strRelTablePath            = dialogArguments[2];      // rel path to xml table (for package)
+         var strCatalogDomain         = dialogArguments[3];      // domain info so apps can verify or find drop target catalog
+         var objTableXml                  = dialogArguments[4];      // the table to show
+         var objIDropObjectXml        = dialogArguments[5];      // iDrop object
+         var objIDropPackageXml       = dialogArguments[6];      // iDrop package
+
+         try
+         {
+			// load the default package -- this sets the idrop control's default URL -- not used by us, but checked by Acad
+			//
+			objIDropPackageXml.XMLDocument.async = false;
+			objIDropPackageXml.XMLDocument.validateOnParse = false;
+			objIDropPackageXml.XMLDocument.resolveExternals = true;
+			objIDropPackageXml.XMLDocument.load("AecbIDrop.xml");
+			
+			if (objIDropPackageXml.parseError.errorCode)
+				document.write(reportParseError(objIDropPackageXml.parseError));
+			
+			//objIDropPackageXml.XMLDocument.save("AecbIDrop.xml")  //not supported in javascript
+			
+			//TODO resolve issue with pkg url ... required or not?
+			//load the default package workaround?  -- doesn't preserve pkg url once idropObj.PackageXml set
+			//idropObj.Package = "AecbIDrop.xml"				         
+             
+			 // ***********************************************************************************
+			 //          Configure the Package -- Match catalog's relative path management
+			 //
+			 // Building Systems content may be published with table paths (bmp image & dwg recipe) set
+			 // either relative to the location of the catalog (.apc) file, or relative to the location
+			 // of the table (.xml) file. This assignment is set in the LandPart.pathsRelativeTo attribute.
+			 //
+			 // By default, MvPart catalogs are set with pathsRelativeTo="Table", which provides for
+			 // nested catalogs. For example the "All Installed MvParts.apc" catalog contains the three
+			 // Mechanical, Electrical, and Plumbing MvPart catalogs. All other Autodesk-published Building
+			 // Systems catalogs use the default pathsRelativeTo="Catalog" setting. Absense of the 
+			 // pathsRelativeTo attribute implies this default behavior.
+			 //
+			 // Understanding the relative path management used by the catalog and contained table files
+			 // is necessary to understand how this code is structured. Code would be much simpler if there
+			 // were only 1 case, or if different code was used for the two cases. 
+			 //
+			 //        pathsRelativeTo="Catalog"                   pathsRelativeTo="Table"
+			 //        (default for non-MvParts)                    (default for MvParts)
+			 //
+			 //        Root Catalog location == "Root"             Root Catalog location == "Root"
+			 //												
+			 //        Key files							       Key files
+			 //												
+			 //        Root/CatalogName.apc					       Root/CatalogName.apc
+			 //        Root/CatalogName.html				       Root/CatalogName.html
+			 //        Root/AecbIDrop.html					       Root/AecbIDrop.html
+			 //        Root/Chap1/Chap1A/Table.xml			       Root/Chap1/Chap1A/Table.xml
+			 //												       Root/Chap1/Chap1A/Table.bmp
+			 //        location of bmp & dwg may vary		       Root/Chap1/Chap1A/Table.dwg
+			 //												
+			 //        IDrop Root URL set to Catalog Root          IDrop Root URL set to Root/Chap1/Chap1A
+			 //
+			 // ***********************************************************************************
+         
+   			 //debugger
+   			 
+	         var oTableRef = objTableXml.XMLDocument.selectSingleNode("/LandPart");
+	         var strBaseUrl = GetBaseUrl(objTableXml.url);
+	         oTableRef.setAttribute("baseUrl", strBaseUrl);
+	         	    	         
+	         			
+	         // ************************************************************************************	         
+			 // Configure dataset defaultsrc -- set path relative to location of AecbIDrop.htm
+			 // NOTE: This assignment is used to resolve the BaseURL in the target app
+			 //       Table pathsRelativeTo=Catalog --> leave default assignment "default.jpg" set in xsl
+			 //       Table pathsRelativeTo=Table   --> set using xml table path relative to AecbIDrop.htm file
+			 //
+			 // Assumption: Catalogs may be published using either pathsRelativeTo Table or Catalog
+			 // TODO: Should not be difficult to read the pathsRelativeTo table node and code this logic
+			 // Current sample uses two cases for each of pathsRelativeTo Catalog vs. Table (assumes constant in cat)
+			 //
+			 // pathsRelativeTo=Catalog --> do nothing (leaves "default.jpg", base URL at cat root)
+			 // pathsRelativeTo=Table   --> replace "default.jpg" with relative table path
+			 //
+			 if (strBaseUrlRelTo == "Table")
+			 {
+				var objDataSetNode = objIDropPackageXml.selectSingleNode("//dataset");
+				if (objDataSetNode != null)
+			 		objDataSetNode.setAttribute("defaultsrc", strRelTablePath);
+				else
+			 		document.write ("Error -- Failed to configure dataset defaultsrc")	
+			 }
+			 
+	         // ************************************************************************************	         
+			 // Configure the standard IDrop datafile src
+			 // TODO resolve usage -- AECB tree contains all 3 files, one could be moved to datafile src
+			 // TODO resolve AECB tree usage, consider update using datafile src or 3 xreffile tags
+			 //
+			 var objSrcFileNode = objIDropPackageXml.selectSingleNode("//datafile");
+			 if (objSrcFileNode != null)
+				objSrcFileNode.setAttribute("src", strRelTablePath);
+			 else
+				document.write ("Error -- Failed to configure default datafile src")	
+	         
+	         	         
+ 	         // ************************************************************************************	         
+             // Configure AECB package elements -- rel path preference -- catalog domain
+             // 
+			 // pathsRelativeTo=Catalog --> set the strRelTablePath (relative to .apc)
+			 // pathsRelativeTo=Table   --> replace with file-only path, base URL will point here
+			 //
+			 var strSrcXmlUrl = strRelTablePath
+	         var objUrlNode = objIDropPackageXml.selectSingleNode("//table/URL");
+	         if (objUrlNode != null)
+	         {
+				if (strBaseUrlRelTo == "Table")
+				{
+					var i = strSrcXmlUrl.lastIndexOf("\\");
+					var j = strSrcXmlUrl.lastIndexOf("/");
+					var len = i > j ? i : j
+					if (len>0)
+						strSrcXmlUrl = strSrcXmlUrl.substr(len+1, strSrcXmlUrl.length);
+				}
+				objUrlNode.setAttribute ("xlink:href", strSrcXmlUrl);
+			 }	
+			 else
+				document.write ("Error -- Failed to configure xml table source")
+				
+			 // set package catalog domain
+			 //
+			 var objPartFamilyNode = objIDropPackageXml.selectSingleNode("//partfamily");
+	         if (objPartFamilyNode != null)
+				objPartFamilyNode.setAttribute ("domain", strCatalogDomain);
+
+
+ 	         // ************************************************************************************	         
+             // Configure the AECB package elements -- Image -- also sets Proxy image
+	         //
+	         objSrcUrlNode = objTableXml.selectSingleNode("//Images/Image/URL");
+	         objUrlAttNode = objSrcUrlNode.selectSingleNode("@xlink:href");
+	         objUrlNode = objIDropPackageXml.selectSingleNode("//image/URL");
+	         
+	         if (objUrlNode != null)
+			 {			 
+			    // set AECB image -- rel path
+			    //
+				var strSrcImageUrl = objUrlAttNode.text
+				objUrlNode.setAttribute("xlink:href", strSrcImageUrl);  
+				
+				// set Proxy image -- rel path
+				//
+				var objProxyNode = objIDropPackageXml.selectSingleNode("//proxy");
+				if (objProxyNode != null)
+				{				    
+					// pathsRelativeTo "Catalog" set proxy image same as AECB image URL
+					// pathsRelativeTo "Table" set proxy image using rel path so HTML page finds it
+					// TODO -- find a better way to set image proxy paths, code below
+					//
+				    var strProxyImagePath = objUrlAttNode.text;
+					if (strBaseUrlRelTo == "Table")
+						strProxyImagePath = strRelTablePath.substr(0, strRelTablePath.lastIndexOf(".")) + ".bmp";
+
+					objProxyNode.setAttribute("defaultsrc", strProxyImagePath); 
+				} 
+				else
+					document.write ("Error -- Failed to configure default source")
+             }
+             else
+             {
+				document.write ("Error -- Failed to configure image source")
+			 }
+             
+             
+ 	         // ************************************************************************************	         
+             // Configure the AECB package elements -- Dwg Recipe -- rel path
+	         //
+	         var objSrcRecipeNode = objTableXml.selectSingleNode("//ColumnConstView/Recipe");
+	         objUrlNode = objIDropPackageXml.selectSingleNode("//dwg/URL");
+	         if ((objUrlNode != null) && (objSrcRecipeNode != null))
+				objUrlNode.setAttribute("xlink:href", objSrcRecipeNode.text);
+             else
+				document.write ("Error -- Failed to configure dwg recipe source")
+      	
+      	
+	         // ************************************************************************************	         
+	         // Set the package on the iDrop object 
+	         //
+	         // NOTE: package    ==> load from file          (sets the idropObj pkg url)
+	         //       packagexml ==> xml passed as a string  (idropObj pkg url undefined)
+	         //
+	         // TODO -- issue with Acad Forker app checks the undefined pkg url not the default src url
+	         //         current iDrop implementation works in AecbCatEditor.exe but not in AecbUiBldSrv.arx
+	         //    
+	         // Set the package on the iDrop object
+	         //    
+	         var objPackageNode = objIDropPackageXml.selectSingleNode("//package"); 
+	         if (objPackageNode != null)
+	            idropObj.PackageXML = objPackageNode.xml; 
+	         else
+				document.write ("Error -- iDrop Package is NULL")
+         }
+         catch (exception)
+         {
+            document.write(reportRuntimeError(exception));
+         }
+        
+		</SCRIPT>
+	</BODY>
+</HTML>

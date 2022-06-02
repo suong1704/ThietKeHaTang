@@ -1,0 +1,231 @@
+/* Part.css */
+
+BODY
+{
+   text-align:left;
+   font-weight:normal;   
+   font-family:verdana; font-size:70%;
+   background-color:#DDD;
+   selector-desc:Document BODY;
+}
+
+.clsPartName
+{
+   font-size:100%;
+   font-family:Verdana;
+   font-weight:normal;
+   /* text-decoration:underline;*/
+   text-align:left;
+   color:black;
+}
+
+
+.clsPartImage
+{
+   margin-top:0em;
+}
+
+
+.clsPartDesc
+{
+   /* position:absolute; */
+   /* left:expression(if (document.body.all.tags("IMG")) { document.body.all.tags("IMG")[0].clientWidth + 20 } ); */
+   /* top:expression(if (document.body.all.tags("IMG")) { document.body.all.tags("IMG")[0].offsetTop } ); */
+   font-size:100%;
+   font-family:Verdana;
+   color:black;
+   background-color:#EEE;
+}
+
+.clsPartLink
+{
+   margin-top:3em;
+}
+
+.clsPartLink LI
+{
+   list-style-image:url(../images/bullet2.gif);
+}
+
+.clsPartDocuments
+{
+   margin-top:3em;
+}
+
+.clsPartDocuments UL
+{
+   margin-top:3em;      /* margin between "Documents" and begin of list items */
+}
+
+.clsPartDocuments SPAN
+{
+   font-weight:bold;      /* "Documents" in bold */
+}
+
+.clsPartDocuments LI
+{
+   list-style-image:url(../images/bullet1.gif);    /* "document" list item bullet image */
+}
+
+/* Table.css */
+
+.clsPartTableDesc
+{
+   font-size:125%;
+   font-family:Verdana;
+   font-weight:normal;
+   text-align:left;
+   color:black;
+   margin-top:1em;
+   margin-bottom:1em;
+}
+
+.clsPartTable
+{
+   margin-top:1em;
+   text-align:left;
+   font-weight:normal;      
+   font-family:verdana; font-size:100%;
+   background-color:white;
+   border:2px groove orange;
+   padding:2px;
+}
+
+
+.clsPartTable THEAD TR TH
+{
+   text-align:left; vertical-align:top;
+   background-color:#DDD;
+   padding:2px;
+}
+
+
+.clsPartTable TBODY TR TD
+{
+   vertical-align:top;
+   text-align:left;
+   background-color:#EEE;
+   padding:2px;
+}
+
+.clsColumnConstListTable
+{
+   margin-top:1em;
+   text-align:left;
+   font-weight:normal;      
+   font-family:verdana; font-size:100%;
+   margin-right:4em;
+   background-color:white;
+   border:2px groove skyblue;
+   padding:2px;
+}
+
+.clsColumnConstListTable TR TH
+{
+   text-align:left; 
+   vertical-align:top;
+   border:solid medium #DDD;
+   background-color:DDD;
+   padding:2px;
+}
+
+
+.clsColumnConstListTable TR TD
+{
+   text-align:left; 
+   vertical-align:top;
+   border:solid medium #DDD;
+   background-color:#EEE;
+   padding:2px;
+}
+
+.clsColumnConstRange
+{
+   margin-top:1em;
+   text-align:left;
+   font-weight:normal;      
+   font-family:verdana; font-size:100%;
+   margin-right:4em;
+   background-color:white;
+   border:2px groove steelblue;
+   padding:2px;
+}
+
+.clsColumnConstRange TR TH
+{
+   text-align:left; 
+   vertical-align:top;
+   border:solid medium #DDD;
+   background-color:DDD;
+   padding:2px;
+}
+
+.clsColumnConstRange TR TD
+{
+   text-align:left; 
+   vertical-align:top;
+   border:solid medium #DDD;
+   background-color:#EEE;
+   padding:2px;
+}
+
+.clsColumnConstTable
+{
+   margin-top:1em;
+   text-align:left;
+   font-weight:normal;      
+   font-family:verdana; font-size:100%;
+   margin-right:4em;
+   background-color:white;
+   border:2px groove mediumturquoise;
+   padding:2px;
+}
+
+
+.clsColumnConstTable TR TH
+{
+	text-align:left; 
+	vertical-align:top;
+    background-color:#DDD;
+	padding:2px;
+}
+
+
+.clsColumnConstTable TR TD
+{
+	text-align:left; 
+   	vertical-align:top;
+   	background-color:#EEE;
+	padding:2px;
+}
+
+.clsColumnCalcTable
+{
+   margin-top:1em;
+   text-align:left;
+   font-weight:normal;      
+   font-family:verdana; font-size:100%;
+   margin-right:4em;
+   background-color:white;
+   border:2px groove paleturquoise;
+   padding:2px;
+}
+
+
+.clsColumnCalcTable TR TH
+{
+	text-align:left; 
+	vertical-align:top;
+    background-color:#DDD;
+	padding:2px;
+}
+
+
+.clsColumnCalcTable TR TD
+{
+	text-align:left; 
+   	vertical-align:top;
+  	background-color:#EEE;
+	padding:2px;
+}
+

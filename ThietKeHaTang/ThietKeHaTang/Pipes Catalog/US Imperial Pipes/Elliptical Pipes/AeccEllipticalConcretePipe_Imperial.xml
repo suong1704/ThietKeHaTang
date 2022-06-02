@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<LandPart desc="Part Table" version="1.0" xmlns:xlink="http://www.w3.org/1999/xlink" fixColumn="C1">
+	<ColumnConstView desc="Parameter-driven Display" id="CCV1" viewKey="3d" viewName="AeccPartRecipe" pathsRelativeTo="Table">
+		<Images>
+			<Image>
+				<URL xlink:title="Part Reference Image" xlink:href="AeccEllipticalConcretePipe_Imperial.bmp"/>
+			</Image>
+		</Images>
+		<Recipe>AeccEllipticalConcretePipe_Imperial.dwg</Recipe>
+	</ColumnConstView>
+	<ColumnUnique desc="Primary Key" datatype="string" name="UUID" visible="0">
+		<RowUnique id="r0">B859DD4E-0610-4740-90A0-782347F73AA2</RowUnique>
+		<RowUnique id="r1">61BE6053-CAA9-4338-92DA-FEDB1978ACB6</RowUnique>
+		<RowUnique id="r2">342A9E85-E04C-4F37-B7D6-023E7B2BB97F</RowUnique>
+		<RowUnique id="r3">8B6613C3-B235-4B74-8DDC-F8C95899BD5F</RowUnique>
+		<RowUnique id="r4">4E1F1058-EF9A-4AD2-9DC0-1831CF29D602</RowUnique>
+		<RowUnique id="r5">24F3408E-345E-425E-8B99-29E7AFAEF98D</RowUnique>
+		<RowUnique id="r6">02093B51-515A-464F-930F-5ECFFB3F6CBC</RowUnique>
+		<RowUnique id="r7">C86D1ECC-29D1-4EE2-A836-FCF4A67D197D</RowUnique>
+		<RowUnique id="r8">CA4C1598-10FD-4D1C-B844-B0B35C28969D</RowUnique>
+		<RowUnique id="r9">75C1373D-4D25-43BE-B7DF-5EA0D9553C2D</RowUnique>
+		<RowUnique id="r10">35F171BC-7D29-4072-BC07-C886EF972D3E</RowUnique>
+		<RowUnique id="r11">B829E0E9-9B1F-4AD9-8D49-94A78B7472E0</RowUnique>
+		<RowUnique id="r12">E7CF25C5-BCA6-409D-9D5E-DB16C59B3C7B</RowUnique>
+		<RowUnique id="r13">5D49B8AE-4736-4D10-A004-7A2D599FC98C</RowUnique>
+		<RowUnique id="r14">0804B6FE-5241-4E61-B11C-15A092427C7A</RowUnique>
+		<RowUnique id="r15">1B96FDED-5B85-4C51-87CA-F9809931C8FA</RowUnique>
+		<RowUnique id="r16">80EA72F0-9E21-4512-8309-4BB02CCE19B2</RowUnique>
+		<RowUnique id="r17">E1C0B6EC-C44D-45A9-A1FE-313A2B32F61C</RowUnique>
+		<RowUnique id="r18">848B8A8C-2951-4BF7-9034-1546AC63219D</RowUnique>
+		<RowUnique id="r19">5FB75EC2-DCE6-4D6A-AEFC-AC81BEEE4CE6</RowUnique>
+		<RowUnique id="r20">E403705F-4EF5-4515-BC76-5F97893AEE60</RowUnique>
+	</ColumnUnique>
+	<Column desc="Inner Pipe Width" dataType="float" unit="inch" name="PIW" id="C1" visible="1" context="PipeInnerWidth" index="0">
+		<Row id="r0">14.0000</Row>
+		<Row id="r1">19.0000</Row>
+		<Row id="r2">22.0000</Row>
+		<Row id="r3">24.0000</Row>
+		<Row id="r4">29.0000</Row>
+		<Row id="r5">34.0000</Row>
+		<Row id="r6">38.0000</Row>
+		<Row id="r7">43.0000</Row>
+		<Row id="r8">48.0000</Row>
+		<Row id="r9">53.0000</Row>
+		<Row id="r10">58.0000</Row>
+		<Row id="r11">63.0000</Row>
+		<Row id="r12">68.0000</Row>
+		<Row id="r13">72.0000</Row>
+		<Row id="r14">77.0000</Row>
+		<Row id="r15">82.0000</Row>
+		<Row id="r16">87.0000</Row>
+		<Row id="r17">92.0000</Row>
+		<Row id="r18">97.0000</Row>
+		<Row id="r19">106.0000</Row>
+		<Row id="r20">116.0000</Row>
+	</Column>
+	<Column desc="Inner Pipe Height" dataType="float" unit="inch" name="PIH" id="C2" visible="1" context="PipeInnerHeight" index="0">
+		<Row id="r0">23.0000</Row>
+		<Row id="r1">30.0000</Row>
+		<Row id="r2">34.0000</Row>
+		<Row id="r3">38.0000</Row>
+		<Row id="r4">45.0000</Row>
+		<Row id="r5">53.0000</Row>
+		<Row id="r6">60.0000</Row>
+		<Row id="r7">68.0000</Row>
+		<Row id="r8">76.0000</Row>
+		<Row id="r9">83.0000</Row>
+		<Row id="r10">91.0000</Row>
+		<Row id="r11">98.0000</Row>
+		<Row id="r12">106.0000</Row>
+		<Row id="r13">113.0000</Row>
+		<Row id="r14">121.0000</Row>
+		<Row id="r15">128.0000</Row>
+		<Row id="r16">136.0000</Row>
+		<Row id="r17">143.0000</Row>
+		<Row id="r18">151.0000</Row>
+		<Row id="r19">166.0000</Row>
+		<Row id="r20">180.0000</Row>
+	</Column>
+	<Column desc="Wall Thickness" dataType="float" unit="inch" name="WTh" id="C3" visible="1" context="WallThickness" index="0">
+		<Row id="r0">4.0000</Row>
+		<Row id="r1">4.0000</Row>
+		<Row id="r2">6.0000</Row>
+		<Row id="r3">6.0000</Row>
+		<Row id="r4">7.0000</Row>
+		<Row id="r5">7.0000</Row>
+		<Row id="r6">8.0000</Row>
+		<Row id="r7">8.0000</Row>
+		<Row id="r8">10.0000</Row>
+		<Row id="r9">10.0000</Row>
+		<Row id="r10">12.0000</Row>
+		<Row id="r11">12.0000</Row>
+		<Row id="r12">12.0000</Row>
+		<Row id="r13">12.0000</Row>
+		<Row id="r14">12.0000</Row>
+		<Row id="r15">12.0000</Row>
+		<Row id="r16">12.0000</Row>
+		<Row id="r17">12.0000</Row>
+		<Row id="r18">12.0000</Row>
+		<Row id="r19">12.0000</Row>
+		<Row id="r20">12.0000</Row>
+	</Column>
+	<ColumnConstList desc="Manning Coefficient" dataType="float" unit="" name="ACMan" id="CCL1" visible="1" context="FlowAnalysis_Manning" index="0">
+		<Item id="i0">0.0130</Item>
+		<Item id="i1">0.0080</Item>
+		<Item id="i2">0.0090</Item>
+		<Item id="i3">0.0100</Item>
+		<Item id="i4">0.0110</Item>
+		<Item id="i5">0.0120</Item>
+		<Item id="i6">0.0140</Item>
+		<Item id="i7">0.0150</Item>
+	</ColumnConstList>
+	<ColumnConst desc="Part Domain" dataType="string" unit="" name="PDom" id="CC0" visible="0" context="Catalog_Domain" index="0">Pipe_Domain</ColumnConst>
+	<ColumnConst desc="Part Type" dataType="string" unit="" name="PTyp" id="CC1" visible="1" context="Catalog_PartType" index="0">Pipe</ColumnConst>
+	<ColumnConst desc="Part Subtype" dataType="string" unit="" name="PSTyp" id="CC2" visible="1" context="Catalog_SubType" index="0">Undefined</ColumnConst>
+	<ColumnConst desc="Part Name" dataType="string" unit="" name="PrtNm" id="CC3" visible="0" context="Catalog_PartName" index="0">AeccEllipticalConcretePipe_Imperial</ColumnConst>
+	<ColumnConst desc="Part Description" dataType="string" unit="" name="PrtD" id="CC4" visible="1" context="Catalog_PartDesc" index="0">Concrete Elliptical Culvert</ColumnConst>
+	<ColumnConst desc="Part ID" dataType="string" unit="" name="PrtID" id="CC5" visible="0" context="Catalog_PartID" index="0">842725BA-C412-4BD4-9114-195957F7E79D</ColumnConst>
+	<ColumnConst desc="Data Version" dataType="string" unit="" name="DVer" id="CC6" visible="0" context="DataVersion" index="0">2.0</ColumnConst>
+	<ColumnConst desc="Content Type" dataType="int" unit="" name="CntTy" id="CC7" visible="0" context="Content_Type" index="0">4</ColumnConst>
+	<ColumnConst desc="Hide Part Flag" dataType="bool" unit="" name="HPrtF" id="CC8" visible="0" context="Catalog_PartHide" index="0">0</ColumnConst>
+	<ColumnConst desc="Cross Sectional Shape" dataType="string" unit="" name="CSS" id="CC9" visible="1" context="SweptShape" index="0">SweptShape_Elliptical</ColumnConst>
+	<ColumnConst desc="Material" dataType="string" unit="" name="Mat" id="CC10" visible="1" context="Material_Type" index="0">Reinforced Concrete Pipe</ColumnConst>
+	<ColumnCalc desc="Part Size Name" dataType="string" unit="" name="PrtSN" id="CCA0" visible="1" context="Catalog_PartSizeName" index="0">FormatNumber($PIW,0) + " x " + FormatNumber($PIH,0) + " inch Concrete Elliptical Culvert"</ColumnCalc>
+	<ColumnCalc desc="Conditional Test 1" dataType="bool" unit="" name="CTest1" id="CCA1" visible="0" context="Conditional_Test" index="1">$PIH &gt; $PIW</ColumnCalc>
+	<ColumnCalc desc="Body Diameter  1" dataType="float" unit="inch" name="BdyD1" id="CCA2" visible="0" context="BodyGeometry_Diameter" index="1">$PIW</ColumnCalc>
+	<ColumnCalc desc="Body Diameter  2" dataType="float" unit="inch" name="BdyD2" id="CCA3" visible="0" context="BodyGeometry_Diameter" index="2">$PIW</ColumnCalc>
+	<ColumnCalc desc="Linear Center Offset" dataType="float" unit="inch" name="LenA1" id="CCA4" visible="1" context="Geometry_Distance2D" index="1">$PIH - $PIW</ColumnCalc>
+</LandPart>

@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<!-- AeccParamCfg.xml file must be located in the Shared Content Directory-->
+<AeccParamConfigSet>
+    <!-- AeccParamDeclaration defines both internally managed and extended part data parameters -->
+    <AeccParamDeclaration>
+        <AeccDfSortGroup name="Part Properties" sortPriority="context">
+            <AeccDfParameter name="PrtSN" desc="Part Size Name" context="Catalog_PartSizeName" index="0" datatype="String" usage="String_Name" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="Mat" desc="Material" context="Material_Type" index="0" datatype="String" usage="String_General" managelist="True" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="WTh" desc="Wall Thickness" context="WallThickness" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="FTh" desc="Floor Thickness" context="FloorThickness" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="CType" desc="Connection Type" context="ConnectionType" index="1" datatype="String" usage="String_EnumKey" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="CSP" desc="Custom Size" context="CustomSize" index="0" datatype="Bool" usage="Bool_General" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="CSS" desc="Cross Sectional Shape" context="SweptShape" index="0" datatype="String" usage="String_EnumKey" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="PID" desc="Inner Pipe Diameter" context="PipeInnerDiameter" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="PIW" desc="Inner Pipe Width" context="PipeInnerWidth" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="PIH" desc="Inner Pipe Height" context="PipeInnerHeight" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="ACMan" desc="Manning Coefficient" context="FlowAnalysis_Manning" index="0" datatype="Float" usage="Double_General" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="ACHW" desc="Hazen Williams Coefficient" context="FlowAnalysis_HazenWilliams" index="0" datatype="Float" usage="Double_General" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="ACDW" desc="Darcy Weisbach Factor" context="FlowAnalysis_DarcyWeisbach" index="0" datatype="Float" usage="Double_General" unit="" visible="True" internal="True"/>
+            <!--AeccDfParameter name="PIB" desc="Inner Pipe Bottom to Base Point" context="PipeInnerBottomToBasePt" index="0" datatype="Float" usage="Double_Distance" unit="in" visible="True" internal="True"/-->
+            <AeccDfParameter name="MCR" desc="Minimum Curve Radius" context="MinCurveRadius" index="0" datatype="Float" usage="Double_Distance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SBS" desc="Structure Shape" context="StructBoundingShape" index="0" datatype="String" usage="String_EnumKey" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="SBSH" desc="Structure Height" context="StructHeight" index="0" datatype="Float" usage="Double_Distance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SBSD" desc="Structure Diameter" context="StructDiameter" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SBSL" desc="Structure Length" context="StructLength" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SBSW" desc="Structure Width" context="StructWidth" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SRS" desc="Rim to Sump Height" context="StructRimToSumpHeight" index="0" datatype="Float" usage="Double_Distance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SBH" desc="Barrel Height" context="StructBarrelHeight" index="0" datatype="Float" usage="Double_Distance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SVPC" desc="Vertical Pipe Clearance" context="StructVertPipeClearance" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <!--AeccDfParameter name="SHPC" desc="Horizontal Pipe Clearance" context="StructHorizPipeClearance" index="0" datatype="Float" usage="Double_Distance" unit="in" visible="True" internal="True"/-->
+            <AeccDfParameter name="SBPC" desc="Barrel Pipe Clearance" context="StructBarrelPipeClearance" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SCH" desc="Cone Height" context="StructConeHeight" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SSTh" desc="Slab Thickness" context="StructSlabThickness" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SRZ" desc="Structure Riser Height" context="StructRiserHeight" index="1" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SID" desc="Inner Structure Diameter" context="StructInnerDiameter" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SIL" desc="Inner Structure Length" context="StructInnerLength" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SIW" desc="Inner Structure Width" context="StructInnerWidth" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SF" desc="Frame" context="StructFrame" index="0" datatype="String" usage="String_General" managelist="True" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="SG" desc="Grate" context="StructGrate" index="0" datatype="String" usage="String_General" managelist="True" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="SC" desc="Cover" context="StructCover" index="0" datatype="String" usage="String_General" managelist="True" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="SFH" desc="Frame Height" context="StructFrameHeight" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SFD" desc="Frame Diameter" context="StructFrameDiameter" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SFL" desc="Frame Length" context="StructFrameLength" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SFW" desc="Frame Width" context="StructFrameWidth" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SHBW" desc="Headwall Base Width" context="StructHwBaseWidth" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SHBTh" desc="Headwall Base Thickness" context="StructHwBaseThickness" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SHTW" desc="Headwall Top Width" context="StructHwTopWidth" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SHTTh" desc="Headwall Top Thickness" context="StructHwTopThickness" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SWBH" desc="Wing Back Height" context="StructWngBackHeight" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SWFH" desc="Wing Front Height" context="StructWngFrontHeight" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SWL" desc="Wing Length" context="StructWingLength" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SWTh" desc="Wing Thickness" context="StructWngThickness" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SABTh" desc="Apron Back Thickness" context="StructApnBackThickness" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SAFTh" desc="Apron Front Thickness" context="StructApnFrontThickness" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SAL" desc="Apron Length" context="StructApnLength" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+            <AeccDfParameter name="SAW" desc="Apron Width" context="StructApnWidth" index="0" datatype="Float" usage="Double_SmallDistance" unit="in" visible="True" internal="True"/>
+	    <AeccDfParameter name="MGE" desc="Model Geometry Engine" context="Geometry_Engine" index="0" datatype="String" usage="String_General" unit="" visible="False" internal="True" />
+            <!--AeccDfParameter name="Test" desc="Test Param" context="Test_Param" index="1" datatype="Float" usage="Double_NonZeroNonNeg" unit="" visible="True" internal="False"/-->
+        </AeccDfSortGroup>
+        <AeccDfSortGroup name="Geometry" sortPriority="context">
+            <AeccDfParameter name="Path" desc="Path" context="PathGeometry" index="1" datatype="Float" usage="Double_Distance" unit="in" visible="False" internal="True"/>
+            <AeccDfParameter name="PathC" desc="Connector Path" context="PathGeometry_Connector" index="1" datatype="Float" usage="Double_Distance" unit="in" visible="False" internal="True"/>
+            <AeccDfParameter name="PathA" desc="Path Angle" context="PathAngle" index="1" datatype="Float" usage="Double_Angle" unit="deg" visible="True" internal="True"/>
+            <AeccDfParameter name="Bdy" desc="Body Geometry" context="BodyGeometry" index="1" datatype="Float" usage="Double_Distance" unit="in" visible="False" internal="True"/>
+            <AeccDfParameter name="BdyD" desc="Body Diameter" context="BodyGeometry_Diameter" index="1" datatype="Float" usage="Double_Distance" unit="in" visible="False" internal="True"/>
+            <AeccDfParameter name="BdySD" desc="Segment Diameter" context="BodyGeometry_SegmentDiameter" index="1" datatype="Float" usage="Double_Distance" unit="in" visible="False" internal="True"/>
+            <AeccDfParameter name="ExtTh" desc="Extruded Thickness" context="BodyGeometry_ExtrudedThickness" index="1" datatype="Float" usage="Double_Distance" unit="in" visible="False" internal="True"/>
+            <AeccDfParameter name="ASC" desc="Arc Segment Count" context="BodyGeometry_ArcSegmentCount" index="1" datatype="Int" usage="Int_NonZeroNonNeg" unit="" visible="False" internal="True"/>
+            <AeccDfParameter name="CLine" desc="Center Line" context="Geometry_CenterLinePath" index="1" datatype="Float" usage="Double_Distance" unit="in" visible="False" internal="True"/>
+            <AeccDfParameter name="Cnst" desc="Construction Geometry" context="Geometry_Construction" index="1" datatype="Float" usage="Double_Distance" unit="in" visible="False" internal="True"/>
+            <AeccDfParameter name="LenA" desc="2D Distance" context="Geometry_Distance2D" index="1" datatype="Float" usage="Double_Distance" unit="in" visible="False" internal="True"/>
+            <AeccDfParameter name="LenB" desc="3D Distance" context="Geometry_Distance3D" index="1" datatype="Float" usage="Double_Distance" unit="in" visible="False" internal="True"/>
+            <AeccDfParameter name="WPOf" desc="Workplane Offset" context="Geometry_WorkplaneOffset" index="1" datatype="Float" usage="Double_Distance" unit="in" visible="False" internal="True"/>
+            <AeccDfParameter name="MPar" desc="Model Parameter" context="Geometry_ModelParameter" index="1" datatype="Float" usage="Double_NonZeroNonNeg" unit="" visible="False" internal="True"/>
+            <AeccDfParameter name="MParA" desc="Model Angle Parameter" context="Geometry_ModelAngleParameter" index="1" datatype="Float" usage="Double_Angle" unit="deg" visible="False" internal="True"/>
+            <AeccDfParameter name="MParL" desc="Model Distance Parameter" context="Geometry_ModelDistanceParameter" index="1" datatype="Float" usage="Double_Distance" unit="in" visible="False" internal="True"/>
+        </AeccDfSortGroup>
+        <AeccDfSortGroup name="Catalog Entry" sortPriority="context">
+            <AeccDfParameter name="PDom" desc="Part Domain" context="Catalog_Domain" index="0" datatype="String" usage="String_EnumKey" unit="" visible="False" internal="True"/>
+            <AeccDfParameter name="PTyp" desc="Part Type" context="Catalog_PartType" index="0" datatype="String" usage="String_EnumKey" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="PSTyp" desc="Part Subtype" context="Catalog_SubType" index="0" datatype="String" usage="String_General" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="PrtNm" desc="Part Name" context="Catalog_PartName" index="0" datatype="String" usage="String_Name" unit="" visible="False" internal="True"/>
+            <AeccDfParameter name="PrtD" desc="Part Description" context="Catalog_PartDesc" index="0" datatype="String" usage="String_Name" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="PrtID" desc="Part ID" context="Catalog_PartID" index="0" datatype="String" usage="String_Guid" unit="" visible="False" internal="True"/>
+            <AeccDfParameter name="PrtUS" desc="Part Source URL" context="SourcePartUrl" index="0" datatype="String" usage="String_General" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="CatID" desc="Catalog ID" context="Catalog_ID" index="0" datatype="String" usage="String_Guid" unit="" visible="False" internal="True"/>
+            <AeccDfParameter name="CatIS" desc="Catalog Source ID" context="SourceCatalogID" index="0" datatype="String" usage="String_Guid" unit="" visible="False" internal="True"/>
+            <AeccDfParameter name="CatUS" desc="Catalog Source URL" context="SourceCatalogUrl" index="0" datatype="String" usage="String_General" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="CusSF" desc="Custom Sizing Flag" context="CustomPartSizing_Flag" index="0" datatype="Bool" usage="Bool_General" unit="" visible="False" internal="True"/>
+            <AeccDfParameter name="PlcHF" desc="Placeholder Flag" context="Placeholder_Flag" index="0" datatype="Bool" usage="Bool_General" unit="" visible="True" internal="True"/>
+            <AeccDfParameter name="HPrtF" desc="Hide Part Flag" context="Catalog_PartHide" index="0" datatype="Bool" usage="Bool_General" unit="" visible="False" internal="True"/>
+        </AeccDfSortGroup>
+        <AeccDfSortGroup name="Data Tracking" sortPriority="context">
+            <AeccDfParameter name="BTRowID" desc="Row ID" context="Catalog_BasicTableRowID" index="0" datatype="String" usage="String_Guid" unit="" visible="False" internal="True"/>
+            <AeccDfParameter name="DVer" desc="Data Version" context="DataVersion" index="0" datatype="String" usage="String_General" unit="" visible="False" internal="True"/>
+            <AeccDfParameter name="CntTy" desc="Content Type" context="Content_Type" index="0" datatype="Int" usage="String_EnumKey" unit="" visible="False" internal="True"/>
+        </AeccDfSortGroup>
+        <AeccDfSortGroup name="Misc" sortPriority="context">
+            <!--AeccDfParameter name="CDF" desc="Custom Data (Float)" context="CustomDataFloat" index="1" datatype="Float" usage="Double_General" unit="" visible="True" internal="True"/-->
+            <!--AeccDfParameter name="CDI" desc="Custom Data (Int)" context="CustomDataInt" index="1" datatype="Int" usage="Int_General" unit="" visible="True" internal="True"/-->
+            <!--AeccDfParameter name="CDS" desc="Custom Data (String)" context="CustomDataString" index="1" datatype="String" usage="String_General" unit="" visible="True" internal="True"/-->
+            <!--AeccDfParameter name="CDB" desc="Custom Data (Bool)" context="CustomDataBool" index="1" datatype="Bool" usage="Bool_General" unit="" visible="True" internal="True"/-->
+            <AeccDfParameter name="CTest" desc="Conditional Test" context="Conditional_Test" index="1" datatype="Bool" usage="Bool_General" unit="" visible="False" internal="True"/>
+            <AeccDfParameter name="STest" desc="Part Size Validation Test" context="PartSizeValidation_Test" index="1" datatype="Bool" usage="Bool_General" unit="" visible="False" internal="True"/>
+        </AeccDfSortGroup>
+    </AeccParamDeclaration>
+    <AeccParamUsage>
+        <AeccPartDomainCfg domain="Pipe_Domain">
+            <AeccReqParam context="SweptShape"/>
+            <AeccPartTypeCfg type="Pipe" desc="Pipe">
+                <AeccReqParam context="WallThickness"/>
+                <AeccShpParam context="PipeInnerDiameter"/>
+                <AeccShpParam context="PipeInnerHeight"/>
+                <AeccShpParam context="PipeInnerWidth"/>
+                <AeccOptParam context="Material_Type"/>
+                <AeccOptParam context="MinCurveRadius"/>
+                <AeccOptParam context="FlowAnalysis_Manning"/>
+                <AeccOptParam context="FlowAnalysis_HazenWilliams"/>
+                <AeccOptParam context="FlowAnalysis_DarcyWeisbach"/>
+            </AeccPartTypeCfg>
+        </AeccPartDomainCfg>
+        <AeccPartDomainCfg domain="Structure_Domain">
+            <AeccReqParam context="StructBoundingShape"/>
+            <AeccReqParam context="StructVertPipeClearance"/>
+            <AeccShpParam context="StructHeight"/>
+            <AeccShpParam context="StructDiameter"/>
+            <AeccShpParam context="StructWidth"/>
+            <AeccShpParam context="StructLength"/>
+            <AeccOptParam context="Material_Type"/>
+            <AeccOptParam context="PartSizeValidation_Test"/>
+            <AeccPartTypeCfg type="Struct_Junction" desc="Junction Structure">
+                <AeccReqParam context="StructRimToSumpHeight"/>
+                <AeccReqParam context="WallThickness"/>
+                <AeccReqParam context="FloorThickness"/>
+                <AeccOptParam context="StructFrame"/>
+                <AeccOptParam context="StructGrate"/>
+                <AeccOptParam context="StructCover"/>
+                <AeccOptParam context="StructFrameHeight"/>
+                <AeccOptParam context="StructFrameDiameter"/>
+                <AeccOptParam context="StructFrameLength"/>
+                <AeccOptParam context="StructFrameWidth"/>
+                <AeccOptParam context="StructFrameHeight"/>
+                <AeccOptParam context="StructBarrelHeight"/>
+                <AeccOptParam context="StructBarrelPipeClearance"/>
+                <AeccOptParam context="StructConeHeight"/>
+                <AeccOptParam context="StructSlabThickness"/>
+                <AeccOptParam context="StructRiserHeight"/>
+                <AeccOptParam context="StructInnerDiameter"/>
+                <AeccOptParam context="StructInnerLength"/>
+                <AeccOptParam context="StructInnerWidth"/>
+            </AeccPartTypeCfg>
+            <AeccPartTypeCfg type="Struct_InletOutlet" desc="Inlet-Outlet Structure">
+                <AeccReqParam context="StructHwBaseWidth"/>
+                <AeccReqParam context="StructHwBaseThickness"/>
+                <AeccOptParam context="StructLength"/>
+                <!--AeccOptParam context="StructHwTopWidth"/-->
+                <!--AeccOptParam context="StructHwTopThickness"/-->
+                <!--AeccOptParam context="StructWngBackHeight"/-->
+                <!--AeccOptParam context="StructWngFrontHeight"/-->
+                <!--AeccOptParam context="StructWingLength"/-->
+                <!--AeccOptParam context="StructWngThickness"/-->
+                <!--AeccOptParam context="StructApnBackThickness"/-->
+                <!--AeccOptParam context="StructApnFrontThickness"/-->
+                <!--AeccOptParam context="StructApnLength"/-->
+                <!--AeccOptParam context="StructApnWidth"/-->
+            </AeccPartTypeCfg>
+            <AeccPartTypeCfg type="Struct_General" desc="General Structure">
+            </AeccPartTypeCfg>
+            <!--AeccPartTypeCfg type="Struct_Null" desc="Null Structure"-->
+            <!--/AeccPartTypeCfg-->
+        </AeccPartDomainCfg>
+    </AeccParamUsage>
+</AeccParamConfigSet>

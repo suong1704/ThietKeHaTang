@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<LandPart desc="Part Table" version="1.0" xmlns:xlink="http://www.w3.org/1999/xlink" fixColumn="C1">
+	<ColumnConstView desc="Parameter-driven Display" id="CCV1" viewKey="3d" viewName="AeccPartRecipe" pathsRelativeTo="Table">
+		<Images>
+			<Image>
+				<URL xlink:title="Part Reference Image" xlink:href="AeccEggShapedConcretePipe_Metric.bmp"/>
+			</Image>
+		</Images>
+		<Recipe>AeccEggShapedConcretePipe_Metric.dwg</Recipe>
+	</ColumnConstView>
+	<ColumnUnique desc="Primary Key" datatype="string" name="UUID" visible="0">
+		<RowUnique id="r0">B859DD4E-0610-4740-90A0-782347F73AA2</RowUnique>
+		<RowUnique id="r1">A7B83151-8A08-40A8-8043-5895E699AE51</RowUnique>
+		<RowUnique id="r2">B25DD1C1-908B-4AC2-91A8-F372F5B12390</RowUnique>
+		<RowUnique id="r3">B7DE5C2C-8D70-45DC-98D4-23E655D84EA2</RowUnique>
+		<RowUnique id="r4">2E67C3E1-1ECD-4F21-A499-DB11F05DB4B6</RowUnique>
+		<RowUnique id="r5">EFA7C26D-D462-472B-93B2-316F892299DA</RowUnique>
+		<RowUnique id="r6">A33C722A-E036-457F-A6F2-2CAE0B4F7E5F</RowUnique>
+		<RowUnique id="r7">F1897405-DA52-4B9B-A4A8-02F57A73E0AD</RowUnique>
+		<RowUnique id="r8">6A3DC699-8AD8-4FCE-BA61-A3B027DC3171</RowUnique>
+		<RowUnique id="r9">BB7CE582-4868-438A-A4FE-381CCF6DE53B</RowUnique>
+		<RowUnique id="r10">AAE446C1-5F64-4937-83BF-615AAA112AC2</RowUnique>
+		<RowUnique id="r11">A256E521-0D89-4DCA-A251-1542094E90FE</RowUnique>
+	</ColumnUnique>
+	<Column desc="Inner Pipe Width" dataType="float" unit="mm" name="PIW" id="C1" visible="1" context="PipeInnerWidth" index="0">
+		<Row id="r0">400.0000</Row>
+		<Row id="r1">500.0000</Row>
+		<Row id="r2">550.0000</Row>
+		<Row id="r3">600.0000</Row>
+		<Row id="r4">700.0000</Row>
+		<Row id="r5">700.0000</Row>
+		<Row id="r6">800.0000</Row>
+		<Row id="r7">850.0000</Row>
+		<Row id="r8">1000.0000</Row>
+		<Row id="r9">1050.0000</Row>
+		<Row id="r10">1200.0000</Row>
+		<Row id="r11">1400.0000</Row>
+	</Column>
+	<Column desc="Inner Pipe Height" dataType="float" unit="mm" name="PIH" id="C2" visible="1" context="PipeInnerHeight" index="0">
+		<Row id="r0">600.0000</Row>
+		<Row id="r1">750.0000</Row>
+		<Row id="r2">900.0000</Row>
+		<Row id="r3">1000.0000</Row>
+		<Row id="r4">1050.0000</Row>
+		<Row id="r5">1200.0000</Row>
+		<Row id="r6">1200.0000</Row>
+		<Row id="r7">1400.0000</Row>
+		<Row id="r8">1500.0000</Row>
+		<Row id="r9">1550.0000</Row>
+		<Row id="r10">1800.0000</Row>
+		<Row id="r11">2100.0000</Row>
+	</Column>
+	<Column desc="Wall Thickness" dataType="float" unit="mm" name="WTh" id="C3" visible="1" context="WallThickness" index="0">
+		<Row id="r0">50.0000</Row>
+		<Row id="r1">60.0000</Row>
+		<Row id="r2">65.0000</Row>
+		<Row id="r3">70.0000</Row>
+		<Row id="r4">80.0000</Row>
+		<Row id="r5">82.0000</Row>
+		<Row id="r6">90.0000</Row>
+		<Row id="r7">95.0000</Row>
+		<Row id="r8">110.0000</Row>
+		<Row id="r9">115.0000</Row>
+		<Row id="r10">130.0000</Row>
+		<Row id="r11">150.0000</Row>
+	</Column>
+	<ColumnConst desc="Part Domain" dataType="string" unit="" name="PDom" id="CC0" visible="0" context="Catalog_Domain" index="0">Pipe_Domain</ColumnConst>
+	<ColumnConst desc="Part Type" dataType="string" unit="" name="PTyp" id="CC1" visible="1" context="Catalog_PartType" index="0">Pipe</ColumnConst>
+	<ColumnConst desc="Part Subtype" dataType="string" unit="" name="PSTyp" id="CC2" visible="1" context="Catalog_SubType" index="0">Undefined</ColumnConst>
+	<ColumnConst desc="Part Name" dataType="string" unit="" name="PrtNm" id="CC3" visible="0" context="Catalog_PartName" index="0">AeccEggShapedConcretePipe_Metric</ColumnConst>
+	<ColumnConst desc="Part Description" dataType="string" unit="" name="PrtD" id="CC4" visible="1" context="Catalog_PartDesc" index="0">Concrete Egg-Shaped Culvert SI</ColumnConst>
+	<ColumnConst desc="Part ID" dataType="string" unit="" name="PrtID" id="CC5" visible="0" context="Catalog_PartID" index="0">9414AE68-4DA3-4513-A04A-252EAFC191DE</ColumnConst>
+	<ColumnConst desc="Data Version" dataType="string" unit="" name="DVer" id="CC6" visible="0" context="DataVersion" index="0">2.0</ColumnConst>
+	<ColumnConst desc="Content Type" dataType="int" unit="" name="CntTy" id="CC7" visible="0" context="Content_Type" index="0">4</ColumnConst>
+	<ColumnConst desc="Hide Part Flag" dataType="bool" unit="" name="HPrtF" id="CC8" visible="0" context="Catalog_PartHide" index="0">0</ColumnConst>
+	<ColumnConst desc="Cross Sectional Shape" dataType="string" unit="" name="CSS" id="CC9" visible="1" context="SweptShape" index="0">SweptShape_EggShaped</ColumnConst>
+	<ColumnCalc desc="Part Size Name" dataType="string" unit="" name="PrtSN" id="CCA0" visible="1" context="Catalog_PartSizeName" index="0">FormatNumber($PIW,0) + " x " + FormatNumber($PIH,0) + " mm Concrete Egg-shaped Culvert"</ColumnCalc>
+	<ColumnCalc desc="Conditional Test 1" dataType="bool" unit="" name="CTest1" id="CCA1" visible="0" context="Conditional_Test" index="1">$PIH &gt; $PIW</ColumnCalc>
+	<ColumnCalc desc="Body Diameter  1" dataType="float" unit="mm" name="BdyD1" id="CCA2" visible="0" context="BodyGeometry_Diameter" index="1">$PIW</ColumnCalc>
+	<ColumnCalc desc="Body Diameter  2" dataType="float" unit="mm" name="BdyD2" id="CCA3" visible="0" context="BodyGeometry_Diameter" index="2">$PIW * 0.50</ColumnCalc>
+	<ColumnCalc desc="Linear Center Offset" dataType="float" unit="mm" name="LenA1" id="CCA4" visible="1" context="Geometry_Distance2D" index="1">$PIH - (0.75 * $PIW)</ColumnCalc>
+	<ColumnCalc desc="2D Distance  2" dataType="float" unit="mm" name="LenA2" id="CCA5" visible="1" context="Geometry_Distance2D" index="2">($PIH - $PIW) * 0.50</ColumnCalc>
+</LandPart>

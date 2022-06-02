@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Autodesk Civil 3D Pipe Catalog 2004 -->
+<pXML id="16C49365-B844-484b-92CE-9A8ACE681B57" version="1.0" name="US Imperial Pipes" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Desc>US Imperial Pipe Catalog</Desc>
+	<DefaultLinearUnits>inch</DefaultLinearUnits>
+	<Images>
+		<Image>
+			<URL xlink:title="Catalog Image" xlink:href="Autodesk Logo.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+		</Image>
+	</Images>
+	<Supplier name="Generic">
+		<Images>
+			<Image>
+				<URL xlink:title="Logo" xlink:href="Autodesk Logo.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+			</Image>
+		</Images>
+		<Link>
+			<URL xlink:title="US Imperial Pipe Catalog" xlink:href="http://www.autodesk.com" xml:lang="en"/>
+		</Link>
+	</Supplier>
+	<Extrinsics>
+		<Extrinsic>
+			<AeccCIRules>
+				<DomainHierarchy>
+					<Domain>
+						<DomainEnum>Pipe_Domain</DomainEnum>
+						<Type>
+							<TypeEnum>Pipe</TypeEnum>
+						</Type>
+					</Domain>
+				</DomainHierarchy>
+				<DomainSet>
+					<DomainEnum>Pipe_Domain</DomainEnum>
+				</DomainSet>
+				<TypeSet>
+					<TypeEnum>Pipe</TypeEnum>
+					<TypeEnum>Elbow</TypeEnum>
+					<TypeEnum>Tee</TypeEnum>
+					<TypeEnum>Wye</TypeEnum>
+					<TypeEnum>Cross</TypeEnum>
+					<TypeEnum>Takeoff</TypeEnum>
+					<TypeEnum>Transition</TypeEnum>
+					<TypeEnum>Coupling</TypeEnum>
+					<TypeEnum>Endcap</TypeEnum>
+				</TypeSet>
+				<SubTypeSet>
+					<SubTypeString>Undefined</SubTypeString>
+				</SubTypeSet>
+				<ShapeSet>
+					<PartShapeEnum>Round</PartShapeEnum>
+				</ShapeSet>
+				<ConnectionTypeSet>
+					<ConnectionTypeEnum>Undefined_Connection_Type</ConnectionTypeEnum>
+				</ConnectionTypeSet>
+				<MaterialSet>
+					<MaterialString>Reinforced Concrete Pipe</MaterialString>
+					<MaterialString>Corrugated HDPE Pipe</MaterialString>
+				</MaterialSet>
+				<ParameterSet>
+					<ParameterString>BTRowID</ParameterString>
+					<ParameterString>PID</ParameterString>
+					<ParameterString>WTh</ParameterString>
+					<ParameterString>PDom</ParameterString>
+					<ParameterString>PTyp</ParameterString>
+					<ParameterString>PSTyp</ParameterString>
+					<ParameterString>PrtNm</ParameterString>
+					<ParameterString>PrtD</ParameterString>
+					<ParameterString>PrtID</ParameterString>
+					<ParameterString>DVer</ParameterString>
+					<ParameterString>CntTy</ParameterString>
+					<ParameterString>HPrtF</ParameterString>
+					<ParameterString>CSS</ParameterString>
+					<ParameterString>CatID</ParameterString>
+					<ParameterString>PrtSN</ParameterString>
+					<ParameterString>BdyD1</ParameterString>
+					<ParameterString>Mat</ParameterString>
+					<ParameterString>ACMan</ParameterString>
+					<ParameterString>PIW</ParameterString>
+					<ParameterString>PIH</ParameterString>
+					<ParameterString>CTest1</ParameterString>
+					<ParameterString>BdyD2</ParameterString>
+					<ParameterString>LenA1</ParameterString>
+					<ParameterString>LenA2</ParameterString>
+				</ParameterSet>
+				<UnitsSet>
+					<UnitsEnum/>
+					<UnitsEnum>inch</UnitsEnum>
+					<UnitsEnum>ft</UnitsEnum>
+					<UnitsEnum>mm</UnitsEnum>
+					<UnitsEnum>cm</UnitsEnum>
+					<UnitsEnum>m</UnitsEnum>
+					<UnitsEnum>deg</UnitsEnum>
+				</UnitsSet>
+				<RelativePathPreference>Table</RelativePathPreference>
+			</AeccCIRules>
+		</Extrinsic>
+	</Extrinsics>
+	<Chapter name="Circular Pipes">Circular Pipes
+		<Desc>Circular Pipes</Desc>
+		<Part name="AeccCircularCMPipe_Imperial" id="481DD6EF-B926-428E-99B7-A5BE30A17E59">
+			<Desc>Corrugated Metal Pipe</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Corrugated Metal Pipe" xlink:href="Circular Pipes\AeccCircularCMPipe_Imperial.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Circular Pipes\AeccCircularCMPipe_Imperial.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Pipe_Domain" part_type="Pipe" part_subtype="Undefined" part_shape="SweptShape_Circular" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccCircularConcretePipe_Imperial" id="30921980-2D9B-493A-88C5-6D10AEA8B835">
+			<Desc>Concrete Pipe</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concrete Pipe" xlink:href="Circular Pipes\AeccCircularConcretePipe_Imperial.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Circular Pipes\AeccCircularConcretePipe_Imperial.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Pipe_Domain" part_type="Pipe" part_subtype="Undefined" part_shape="SweptShape_Circular" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccCircularCorrugatedHDPEPipe_Imperial" id="864CAB49-5CD4-47E7-978B-A0E9D6B8107C">
+			<Desc>Corrugated HDPE Pipe</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Corrugated HDPE Pipe" xlink:href="Circular Pipes\AeccCircularCorrugatedHDPEPipe_Imperial.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Circular Pipes\AeccCircularCorrugatedHDPEPipe_Imperial.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Pipe_Domain" part_type="Pipe" part_subtype="Undefined" part_shape="SweptShape_Circular" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccCircularDIPipe_Imperial" id="83918D30-A182-479F-8DB8-F0D62E41D107">
+			<Desc>Ductile Iron Pipe</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Ductile Iron Pipe" xlink:href="Circular Pipes\AeccCircularDIPipe_Imperial.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Circular Pipes\AeccCircularDIPipe_Imperial.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Pipe_Domain" part_type="Pipe" part_subtype="Undefined" part_shape="SweptShape_Circular" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccCircularHDPEPipe_Imperial" id="F5A958B6-07B2-474A-9A64-6819CAB0DFE1">
+			<Desc>HDPE Pipe</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="HDPE Pipe" xlink:href="Circular Pipes\AeccCircularHDPEPipe_Imperial.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Circular Pipes\AeccCircularHDPEPipe_Imperial.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Pipe_Domain" part_type="Pipe" part_subtype="Undefined" part_shape="SweptShape_Circular" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccCircularPvcPipe_Imperial" id="2588E334-29D8-4398-973B-A6D2458D46C3">
+			<Desc>PVC Pipe</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="PVC Pipe" xlink:href="Circular Pipes\AeccCircularPvcPipe_Imperial.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Circular Pipes\AeccCircularPvcPipe_Imperial.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Pipe_Domain" part_type="Pipe" part_subtype="Undefined" part_shape="SweptShape_Circular" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+	</Chapter>
+	<Chapter name="Egg-Shaped Pipes">Egg-Shaped Pipes
+		<Desc>Egg-Shaped Pipes</Desc>
+		<Part name="AeccEggShapedConcretePipe_Imperial" id="57264385-1E5B-43B1-93C6-8B682D4153F7">
+			<Desc>Concrete Egg-Shaped Culvert</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concrete Egg-Shaped Culvert" xlink:href="Egg-Shaped Pipes\AeccEggShapedConcretePipe_Imperial.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Egg-Shaped Pipes\AeccEggShapedConcretePipe_Imperial.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Pipe_Domain" part_type="Pipe" part_subtype="Undefined" part_shape="SweptShape_EggShaped" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+	</Chapter>
+	<Chapter name="Elliptical Pipes">Elliptical Pipes
+		<Desc>Elliptical Pipes</Desc>
+		<Part name="AeccEllipticalConcretePipe_Imperial" id="842725BA-C412-4BD4-9114-195957F7E79D">
+			<Desc>Concrete Elliptical Culvert</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concrete Elliptical Culvert" xlink:href="Elliptical Pipes\AeccEllipticalConcretePipe_Imperial.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Elliptical Pipes\AeccEllipticalConcretePipe_Imperial.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Pipe_Domain" part_type="Pipe" part_subtype="Undefined" part_shape="SweptShape_Elliptical" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccHorizEllipticalConcreteArchPipe_Imperial" id="CE8F77E3-9149-4B37-89AF-49B353CB6DCA">
+			<Desc>Concrete Horizontal Elliptical Arch Pipe</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concrete Horizontal Elliptical Arch Pipe" xlink:href="Elliptical Pipes\AeccHorizEllipticalConcreteArchPipe_Imperial.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Elliptical Pipes\AeccHorizEllipticalConcreteArchPipe_Imperial.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Pipe_Domain" part_type="Pipe" part_subtype="Undefined" part_shape="SweptShape_Arched" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccHorizEllipticalConcretePipe_Imperial" id="C5631856-4AFD-4824-80A0-E02580FE3794">
+			<Desc>Concrete Horizontal Elliptical Culvert</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concrete Horizontal Elliptical Culvert" xlink:href="Elliptical Pipes\AeccHorizEllipticalConcretePipe_Imperial.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Elliptical Pipes\AeccHorizEllipticalConcretePipe_Imperial.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Pipe_Domain" part_type="Pipe" part_subtype="Undefined" part_shape="SweptShape_HorizElliptical" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+	</Chapter>
+	<Chapter name="Rectangular Pipes">Rectangular Pipes
+		<Desc>Rectangular Pipes</Desc>
+		<Part name="AeccRectangularConcretePipe_Imperial" id="4A71162E-70BB-4AE4-A7D5-0F9227F3D4B1">
+			<Desc>Concrete Box Culvert</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concrete Box Culvert" xlink:href="Rectangular Pipes\AeccRectangularConcretePipe_Imperial.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Rectangular Pipes\AeccRectangularConcretePipe_Imperial.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Pipe_Domain" part_type="Pipe" part_subtype="Undefined" part_shape="SweptShape_Rectangular" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+	</Chapter>
+</pXML>

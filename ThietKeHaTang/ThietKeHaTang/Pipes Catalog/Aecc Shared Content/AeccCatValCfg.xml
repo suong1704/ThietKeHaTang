@@ -1,0 +1,16 @@
+<!-- AeccCatValCfg.xml file copied into the Shared Content Directory can enable the following unsupported CatalogTest options -->
+<AeccCatValConfigSet>
+    <!-- ValidationMode sets the level of testing, Level1 is the default (no cfg file) behavior-->
+    <!--     Basic : minimal test with no domain specific tests or additional report output -->
+    <!--     Level1 : standard test with domain specific tests and additional report output (Default) -->
+    <!--     Level2 : Internal usage only, validates content specific to product release requirements, e.g. DataVersion updates, Calc PartSizeName usage, etc. (works with AutoCorrect)  -->
+    <!--     Level3 : No longer valid in R3 (same as level 2, but forces the test for all pipe fittings, will produce some false negatives for CustomSize disabled tables, errors must be reviewed -->
+    <ValidationMode>Level1</ValidationMode>
+    <!-- WritebackMode can be used to turn on and configure automated write-back of xml table files, default is None-->
+    <!--    None : Test-only, no data modification or write-back (Default) -->
+    <!--    AutoCorrect : Write-back of any failed table files, any corrections enabled by the app will be made (only a small subset of possible errors are AutoCorrect enabled) -->
+    <!--    SpecialCaseOnly : Used internally for special edit scenarios such as migrating data version, or other automated edits. Only those files changed in this manner are modified and saved -->
+    <!--    ForceAll : Writes-back all table files, regardless of test results on file. Useful to update all files using the PartTemplate.xml (comments, some attributes, and some elements may be globally modified in this manner -->
+    <WritebackMode>SpecialCaseOnly</WritebackMode>
+    <!-- WritebackMode>AutoCorrect</WritebackMode-->
+</AeccCatValConfigSet>

@@ -1,0 +1,172 @@
+/* AecbNavigationFrame.css */
+
+a:link		{ color: #0000CC; }
+a:active		{ color: #0000CC; }
+a:visited 	{ color: #990099; }
+
+
+BODY
+{
+   font-family:verdana; font-size:70%;
+   /*background-color:#DDD;*/
+   selector-desc:Document BODY;
+}
+
+/* styles valid for the whole tree */
+/* tree is indented by 4mm */
+/* no space between the tree elements */
+UL
+{
+   margin-left:4mm;
+   margin-bottom:0em;
+}
+
+/* styles valid for all tree elements */
+/* no predefined type of the line-item marker for the object. */
+/* default cursor. */
+LI
+{
+	font-size:95%;
+   list-style-type:none;
+   cursor:default;
+}
+
+/* styles for a subtree */
+/* subtrees are closed by default */
+/* and are indented by one em (em := The height of the element's font) */
+LI UL
+{
+   margin-left:1em;
+   display:none;
+}
+
+/* closed and unselected branch */
+/* the marker image */
+/* and hand cursor */
+LI.clsHasKids SPAN
+{
+   list-style-image:url(../images/plus.gif);
+   cursor:hand;
+}
+
+/* closed and selected branch */
+/* bold and black font */
+LI.clsHasKids SPAN.clsSelected
+{
+   color:white;
+   background-color:blue;
+}
+
+/* open and selected branch */
+/* change marker image */
+/* bold and black font */
+LI.clsHasKids SPAN.clsSelectedAndOpen
+{
+   color:white;
+   background-color:blue;
+   list-style-image:url(../images/minus.gif);
+}
+
+/* open and unselected branch */
+/* change marker image */
+LI.clsHasKids SPAN.clsOpen
+{
+   list-style-image:url(../images/minus.gif);
+}
+
+/* unselected leaf */
+LI.clsNoKids SPAN
+{
+   list-style-image:url(../images/bullet3.gif);
+/*   list-style-image:url(../images/nl-show-0.gif); */
+   cursor:default;
+}
+
+/* selected leaf */
+LI.clsNoKids SPAN.clsSelected
+{
+   color:white;
+   background-color:blue;
+   list-style-image:url(../images/bullet1.gif);
+/*   list-style-image:url(../images/nl-show-0.gif); */
+}
+
+.clsCompanyLogo
+{
+/*   display:none; */
+   position:relative;
+   left:expression(document.body.clientWidth/2 - (width/2)); /* center!! */
+}
+
+/************************************
+ *
+ * Tabulator
+ *
+ ************************************/
+
+
+.clsTabContentNavigation
+{
+   background-color:#DDD;
+   padding:1em;
+}
+
+.clsTabContentSearch
+{
+   background-color:#DDD;
+   padding:1em;
+}
+
+
+.clsTab
+{
+	font: bold 80% verdana,arial,helvetica,sans-serif;
+	cursor:hand;
+	color:#FFFFFF;
+	background-color:#3366CC;
+/*	background-color:gray;*/
+}
+
+.clsTabSelected
+{
+	font: bold 75% verdana,arial,helvetica,sans-serif;
+	cursor:hand;
+	color:#000000;
+	background-color:#99CCFF;
+/*	background-color:silver;*/
+}
+
+
+
+/************************************
+ *
+ * CatalogSearchResult
+ *
+ ************************************/
+
+.clsSearchResultTable
+{
+	background-color:white;
+   /*border:5px groove orange;*/
+   border:5px;
+	padding:2px;
+}
+
+
+.clsSearchResultTable THEAD TR TH
+{
+	text-align:left; vertical-align:top;
+   background-color:#DDD;
+	padding:2px;
+	font: bold 65% verdana,arial,helvetica,sans-serif;
+}
+
+
+.clsSearchResultTable TBODY TR TD
+{
+   vertical-align:top;
+   background-color:#EEE;
+	padding:2px;
+	font: normal 65% verdana,arial,helvetica,sans-serif;
+}
+

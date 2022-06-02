@@ -1,0 +1,73 @@
+/* Catalog.css */
+
+a:link		{ color: #0000CC; }
+a:active		{ color: #0000CC; }
+a:visited 	{ color: #990099; }
+
+
+BODY
+{
+   font-family:verdana; font-size:70%;
+   background-color:#DDD;
+   selector-desc:Document BODY;
+}
+
+.clsCatalogName
+{
+   font-size:150%;
+   font-family:Verdana;
+   font-weight:bold;
+   text-decoration:underline;
+   text-align:center;
+   color:#003333;
+}
+
+.clsCatalogImage
+{
+   margin-top:2em;
+   position:relative;
+   left:expression(document.body.clientWidth/2 - (width/2)); /* center!! */
+}
+
+/* place description right of the image */
+.clsCatalogDesc
+{
+   margin-top:3em;
+   font-size:90%;
+   font-family:Verdana;
+   color:black;
+   background-color:#EEE;
+   position:relative;
+   width:expression(if (document.body.all.tags("IMG")) { document.body.all.tags("IMG")[0].offsetWidth });
+   left:expression(document.body.clientWidth/2 - (offsetWidth/2)); /* center!! */
+}
+
+.clsCatalogLink
+{
+   margin-top:3em;
+}
+
+.clsCatalogLink LI
+{
+   list-style-image:url(../images/bullet2.gif);
+}
+
+.clsCatalogDocuments
+{
+   margin-top:2em;
+}
+
+.clsCatalogDocuments UL
+{
+   margin-top:0.5em;      /* margin between "Documents" and begin of list items */
+}
+
+.clsCatalogDocuments SPAN
+{
+   font-weight:bold;      /* "Documents" in bold */
+}
+
+.clsCatalogDocuments LI
+{
+   list-style-image:url(../images/bullet1.gif);
+}

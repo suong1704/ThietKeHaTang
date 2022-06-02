@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Autodesk Civil 3D Structure Catalog 2004 -->
+<pXML id="F1FEBE2D-D589-4f85-BF8E-650ED06A5EA5" version="1.0" name="Metric Structures" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Desc>Metric Structure Catalog</Desc>
+	<DefaultLinearUnits>mm</DefaultLinearUnits>
+	<Images>
+		<Image>
+			<URL xlink:title="Catalog Image" xlink:href="Autodesk Logo.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+		</Image>
+	</Images>
+	<Supplier name="Autodesk">
+		<Desc>Metric Structure Catalog</Desc>
+		<Images>
+			<Image>
+				<URL xlink:title="Logo" xlink:href="Autodesk Logo.jpg" xlink:show="embed" xlink:actuate="onLoad"/>
+			</Image>
+		</Images>
+		<Link>
+			<URL xlink:title="Homepage" xlink:href="http://www.autodesk.com" xml:lang="en"/>
+		</Link>
+	</Supplier>
+	<Extrinsics>
+		<Extrinsic>
+			<AeccCIRules>
+				<DomainHierarchy>
+					<Domain>
+						<DomainEnum>Structure_Domain</DomainEnum>
+						<Type>
+							<TypeEnum>Struct_InletOutlet</TypeEnum>
+						</Type>
+						<Type>
+							<TypeEnum>Struct_Junction</TypeEnum>
+						</Type>
+						<Type>
+							<TypeEnum>Struct_General</TypeEnum>
+						</Type>
+					</Domain>
+				</DomainHierarchy>
+				<DomainSet>
+					<DomainEnum>Structure_Domain</DomainEnum>
+				</DomainSet>
+				<TypeSet>
+					<TypeEnum>Struct_Junction</TypeEnum>
+					<TypeEnum>Struct_InletOutlet</TypeEnum>
+					<TypeEnum>Struct_General</TypeEnum>
+				</TypeSet>
+				<SubTypeSet>
+					<SubTypeString>Undefined</SubTypeString>
+					<SubTypeString>Concentric</SubTypeString>
+					<SubTypeString>Slab Top</SubTypeString>
+					<SubTypeString>Eccentric</SubTypeString>
+					<SubTypeString>Rectangular</SubTypeString>
+				</SubTypeSet>
+				<ShapeSet>
+					<PartShapeEnum>Undefined_Shape</PartShapeEnum>
+					<PartShapeEnum>Round</PartShapeEnum>
+					<PartShapeEnum>Rectangular</PartShapeEnum>
+					<PartShapeEnum>Oval</PartShapeEnum>
+				</ShapeSet>
+				<ConnectionTypeSet>
+					<ConnectionTypeEnum>Undefined_Connection_Type</ConnectionTypeEnum>
+				</ConnectionTypeSet>
+				<MaterialSet/>
+				<GaugeSet/>
+				<ParameterContextSet/>
+				<ParameterSet>
+					<ParameterString>SBSL</ParameterString>
+					<ParameterString>SBSW</ParameterString>
+					<ParameterString>SBSH</ParameterString>
+					<ParameterString>PDom</ParameterString>
+					<ParameterString>PTyp</ParameterString>
+					<ParameterString>PSTyp</ParameterString>
+					<ParameterString>PrtNm</ParameterString>
+					<ParameterString>PrtD</ParameterString>
+					<ParameterString>PrtID</ParameterString>
+					<ParameterString>DVer</ParameterString>
+					<ParameterString>CntTy</ParameterString>
+					<ParameterString>HPrtF</ParameterString>
+					<ParameterString>SBS</ParameterString>
+					<ParameterString>CusSF</ParameterString>
+					<ParameterString>SVPC</ParameterString>
+					<ParameterString>WPOf1</ParameterString>
+					<ParameterString>LenA2</ParameterString>
+					<ParameterString>CatID</ParameterString>
+					<ParameterString>BdyD1</ParameterString>
+					<ParameterString>BdyD2</ParameterString>
+					<ParameterString>BdyD3</ParameterString>
+					<ParameterString>LenA1</ParameterString>
+					<ParameterString>LenA3</ParameterString>
+					<ParameterString>SHBTh</ParameterString>
+					<ParameterString>SHBW</ParameterString>
+					<ParameterString>WPOf2</ParameterString>
+					<ParameterString>WPOf3</ParameterString>
+					<ParameterString>PrtSN</ParameterString>
+					<ParameterString>LenA9</ParameterString>
+					<ParameterString>LenA4</ParameterString>
+					<ParameterString>LenA5</ParameterString>
+					<ParameterString>LenA6</ParameterString>
+					<ParameterString>LenA7</ParameterString>
+					<ParameterString>LenA8</ParameterString>
+					<ParameterString>LenB1</ParameterString>
+					<ParameterString>PathA1</ParameterString>
+					<ParameterString>LenA10</ParameterString>
+					<ParameterString>WPOf4</ParameterString>
+					<ParameterString>SID</ParameterString>
+					<ParameterString>SCH</ParameterString>
+					<ParameterString>WTh</ParameterString>
+					<ParameterString>FTh</ParameterString>
+					<ParameterString>SFH</ParameterString>
+					<ParameterString>SFL</ParameterString>
+					<ParameterString>SFW</ParameterString>
+					<ParameterString>SRS</ParameterString>
+					<ParameterString>SBPC</ParameterString>
+					<ParameterString>LenB2</ParameterString>
+					<ParameterString>SBSD</ParameterString>
+					<ParameterString>SFD</ParameterString>
+					<ParameterString>SSTh</ParameterString>
+					<ParameterString>SIW</ParameterString>
+					<ParameterString>SIL</ParameterString>
+					<ParameterString>SBH</ParameterString>
+					<ParameterString>STest2</ParameterString>
+					<ParameterString>BdyD4</ParameterString>
+					<ParameterString>STest1</ParameterString>
+					<ParameterString>LenB3</ParameterString>
+				</ParameterSet>
+				<UnitsSet>
+					<UnitsEnum/>
+					<UnitsEnum>inch</UnitsEnum>
+					<UnitsEnum>ft</UnitsEnum>
+					<UnitsEnum>mm</UnitsEnum>
+					<UnitsEnum>cm</UnitsEnum>
+					<UnitsEnum>m</UnitsEnum>
+					<UnitsEnum>deg</UnitsEnum>
+				</UnitsSet>
+				<RelativePathPreference>Table</RelativePathPreference>
+			</AeccCIRules>
+		</Extrinsic>
+	</Extrinsics>
+	<Chapter name="Inlet-Outlets">Inlet-Outlets
+		<Desc>Inlet-Outlets</Desc>
+		<Part name="AeccStructRecEndSectionforRoundCMP_Metric" id="90063979-D72B-4557-9374-46EE68B26DD6">
+			<Desc>CMP Rectangular End Section SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="CMP Rectangular End Section SI" xlink:href="Inlet-Outlets\AeccStructRecEndSectionforRoundCMP_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet-Outlets\AeccStructRecEndSectionforRoundCMP_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_InletOutlet" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructRectBoxCulvertHeadwall_Metric" id="1FCC7A73-9334-4BBB-967B-6A946EF5DC27">
+			<Desc>Concrete Rectangular Box Culvert Headwall SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concrete Rectangular Box Culvert Headwall SI" xlink:href="Inlet-Outlets\AeccStructRectBoxCulvertHeadwall_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet-Outlets\AeccStructRectBoxCulvertHeadwall_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_InletOutlet" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructRectFlaredEndSection_Metric" id="23B2AB2E-344C-444D-BCF5-F1107668A7BC">
+			<Desc>Concrete Flared End Section SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concrete Flared End Section SI" xlink:href="Inlet-Outlets\AeccStructRectFlaredEndSection_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet-Outlets\AeccStructRectFlaredEndSection_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_InletOutlet" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructRectHeadwallVarHt_Metric" id="F26EF489-FE01-4546-9397-53B1C5F9E8E5">
+			<Desc>Rectangular Headwall Variable Height SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Headwall Variable Height SI" xlink:href="Inlet-Outlets\AeccStructRectHeadwallVarHt_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet-Outlets\AeccStructRectHeadwallVarHt_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_InletOutlet" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructRectHeadwall_Metric" id="122E7F3A-B4D4-44E0-9326-0BCE8EF4FD3D">
+			<Desc>Concrete Rectangular Headwall SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concrete Rectangular Headwall SI" xlink:href="Inlet-Outlets\AeccStructRectHeadwall_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet-Outlets\AeccStructRectHeadwall_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_InletOutlet" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructRectWingedHeadwall_Metric" id="667FFEAD-A0C4-4752-8002-3F82271CB353">
+			<Desc>Concrete Rectangular Winged Headwall SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concrete Rectangular Winged Headwall SI" xlink:href="Inlet-Outlets\AeccStructRectWingedHeadwall_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Inlet-Outlets\AeccStructRectWingedHeadwall_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_InletOutlet" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+	</Chapter>
+	<Chapter name="Junction Structures with Frames">Junction Structures with Frames
+		<Desc>Junction Structures with Frames</Desc>
+		<Part name="AeccStructConcentricCylinderRectFrame_Metric" id="A0ADFF70-5730-4F3F-B2F6-9C39DCA817E0">
+			<Desc>Concentric Cylindrical Structure Rectangular Frame SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concentric Cylindrical Structure Rectangular Frame SI" xlink:href="Junction Structures with Frames\AeccStructConcentricCylinderRectFrame_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures with Frames\AeccStructConcentricCylinderRectFrame_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Concentric" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructConcentricCylinder_Metric" id="F4657229-FA05-4718-9B1A-9230101749E6">
+			<Desc>Concentric Cylindrical Structure SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concentric Cylindrical Structure SI" xlink:href="Junction Structures with Frames\AeccStructConcentricCylinder_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures with Frames\AeccStructConcentricCylinder_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Concentric" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructCylSlabTopCylFrame_Metric" id="D0F590F0-0250-436D-B660-347AD681DC3C">
+			<Desc>Cylindrical Structure Slab Top Circular Frame SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Cylindrical Structure Slab Top Circular Frame SI" xlink:href="Junction Structures with Frames\AeccStructCylSlabTopCylFrame_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures with Frames\AeccStructCylSlabTopCylFrame_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Slab Top" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructCylSlabTopRectFrame_Metric" id="EBF51975-14DC-4AAA-8ECA-9BA3F9672CFE">
+			<Desc>Cylindrical Structure Slab Top Rectangular Frame SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Cylindrical Structure Slab Top Rectangular Frame SI" xlink:href="Junction Structures with Frames\AeccStructCylSlabTopRectFrame_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures with Frames\AeccStructCylSlabTopRectFrame_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Slab Top" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructEccentricCylinderRectFrame_Metric" id="80CCEF6A-5E7C-421B-A3C4-373173516AB0">
+			<Desc>Eccentric Cylindrical Structure Rectangular Frame SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric Cylindrical Structure Rectangular Frame SI" xlink:href="Junction Structures with Frames\AeccStructEccentricCylinderRectFrame_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures with Frames\AeccStructEccentricCylinderRectFrame_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Eccentric" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructEccentricCylinder_Metric" id="A160595E-3B24-4B41-AA42-5183FB59E938">
+			<Desc>Eccentric Cylindrical Structure SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric Cylindrical Structure SI" xlink:href="Junction Structures with Frames\AeccStructEccentricCylinder_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures with Frames\AeccStructEccentricCylinder_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Eccentric" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructRectSlabTopCylFrame_Metric" id="4432305F-A745-445A-9CD9-2FB8E1EDD048">
+			<Desc>Rectangular Structure Slab Top Circular Frame SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Structure Slab Top Circular Frame SI" xlink:href="Junction Structures with Frames\AeccStructRectSlabTopCylFrame_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures with Frames\AeccStructRectSlabTopCylFrame_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Slab Top" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructRectSlabTopRectFrame_Metric" id="A90411C9-3E16-48CA-BBFA-5FED1B7BC242">
+			<Desc>Rectangular Structure Slab Top Rectangular Frame SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Structure Slab Top Rectangular Frame SI" xlink:href="Junction Structures with Frames\AeccStructRectSlabTopRectFrame_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures with Frames\AeccStructRectSlabTopRectFrame_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructTwoTierEccentricCylRectFrame_Metric" id="607AFA32-8E22-4F76-B99E-DEB8E1D38CCE">
+			<Desc>Eccentric Cylindrical 2-Tier Rectangular Frame SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric Cylindrical 2-Tier Rectangular Frame SI" xlink:href="Junction Structures with Frames\AeccStructTwoTierEccentricCylRectFrame_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures with Frames\AeccStructTwoTierEccentricCylRectFrame_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Eccentric" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructTwoTierEccentricCyl_Metric" id="F4CD9C5C-0EAF-4C3A-BC34-BD8713278B68">
+			<Desc>Eccentric Cylindrical 2-Tier Circular Frame SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Eccentric Cylindrical 2-Tier Circular Frame SI" xlink:href="Junction Structures with Frames\AeccStructTwoTierEccentricCyl_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures with Frames\AeccStructTwoTierEccentricCyl_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Eccentric" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructTwoTierRectBaseRectFrame_Metric" id="A1BF7AC5-F7B7-4230-B5FB-F628476E1886">
+			<Desc>Rectangular Structure 2-Tier Rectangular Frame SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Structure 2-Tier Rectangular Frame SI" xlink:href="Junction Structures with Frames\AeccStructTwoTierRectBaseRectFrame_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures with Frames\AeccStructTwoTierRectBaseRectFrame_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Rectangular" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructTwoTierRectBase_Metric" id="69E31713-3BEA-4BB3-9BAF-3AD51780D5C5">
+			<Desc>Rectangular Structure 2-Tier Circular Frame SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Structure 2-Tier Circular Frame SI" xlink:href="Junction Structures with Frames\AeccStructTwoTierRectBase_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures with Frames\AeccStructTwoTierRectBase_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Rectangular" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+	</Chapter>
+	<Chapter name="Junction Structures without Frames">Junction Structures without Frames
+		<Desc>Junction Structures without Frames</Desc>
+		<Part name="AeccCylinderJunctionStructureNF_Metric" id="068A9DC3-FBB1-47B6-AAFE-67AA722BF948">
+			<Desc>Cylindrical Junction Structure NF SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Cylindrical Junction Structure NF SI" xlink:href="Junction Structures without Frames\AeccCylinderJunctionStructureNF_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures without Frames\AeccCylinderJunctionStructureNF_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccRectangularJunctionStructureNF_Metric" id="1CF61C61-F401-48C2-B423-7EFEDA40B164">
+			<Desc>Rectangular Junction Structure NF SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Rectangular Junction Structure NF SI" xlink:href="Junction Structures without Frames\AeccRectangularJunctionStructureNF_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures without Frames\AeccRectangularJunctionStructureNF_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccStructConcentricCylinderNF_Metric" id="9D1237FA-055D-459C-AAF0-ECD78CC03743">
+			<Desc>Concentric Cylindrical Structure NF SI</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Concentric Cylindrical Structure NF SI" xlink:href="Junction Structures without Frames\AeccStructConcentricCylinderNF_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Junction Structures without Frames\AeccStructConcentricCylinderNF_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_Junction" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="False"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+	</Chapter>
+	<Chapter name="Simple Shapes">Simple Shapes
+		<Desc>Simple Shapes</Desc>
+		<Part name="AeccSimpleBox_Metric" id="91CDFDA4-A109-4BAE-AD8D-85E7938B28A5">
+			<Desc>Simple Box -- Metric</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Simple Box -- Metric" xlink:href="Simple Shapes\AeccSimpleBox_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Simple Shapes\AeccSimpleBox_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_General" part_subtype="Undefined" part_shape="BoundingShape_Box" placeholder="False" hidepart="True"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+		<Part name="AeccSimpleCylinder_Metric" id="9293D95D-75EF-4847-9BDA-7410F1C8C3EE">
+			<Desc>Simple Cylinder -- Metric</Desc>
+			<Images>
+				<Image>
+					<URL xlink:title="Simple Cylinder -- Metric" xlink:href="Simple Shapes\AeccSimpleCylinder_Metric.bmp" xlink:show="embed" xlink:actuate="onLoad"/>
+				</Image>
+			</Images>
+			<TableRef>
+				<URL xlink:href="Simple Shapes\AeccSimpleCylinder_Metric.xml"/>
+			</TableRef>
+			<Extrinsics>
+				<Extrinsic name="AeccPartSearchAttribList">
+					<AeccPartSearchAttribList domain="Structure_Domain" part_type="Struct_General" part_subtype="Undefined" part_shape="BoundingShape_Cylinder" placeholder="False" hidepart="True"/>
+				</Extrinsic>
+			</Extrinsics>
+		</Part>
+	</Chapter>
+</pXML>

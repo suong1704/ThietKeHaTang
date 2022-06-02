@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<LandPart desc="Part Table" version="1.0" xmlns:xlink="http://www.w3.org/1999/xlink" fixColumn="C1">
+	<ColumnConstView desc="Parameter-driven Display" id="CCV1" viewKey="3d" viewName="AeccPartRecipe" pathsRelativeTo="Table">
+		<Images>
+			<Image>
+				<URL xlink:title="Part Reference Image" xlink:href="AeccSimpleBox_Metric.bmp"/>
+			</Image>
+		</Images>
+		<Recipe>AeccSimpleBox_Metric.dwg</Recipe>
+	</ColumnConstView>
+	<ColumnRangeList desc="Structure Height " dataType="float" unit="mm" name="SBSH" id="CCR1" visible="1" context="StructHeight" index="0">
+		<Item id="i0" rangeVal="Min">300.0000</Item>
+		<Item id="i1" rangeVal="Max">200000.0000</Item>
+		<Item id="i2" rangeVal="Default">1400.0000</Item>
+	</ColumnRangeList>
+	<ColumnConst desc="Part Domain" dataType="string" unit="" name="PDom" id="CC0" visible="0" context="Catalog_Domain" index="0">Structure_Domain</ColumnConst>
+	<ColumnConst desc="Part Type" dataType="string" unit="" name="PTyp" id="CC1" visible="1" context="Catalog_PartType" index="0">Struct_General</ColumnConst>
+	<ColumnConst desc="Part Subtype" dataType="string" unit="" name="PSTyp" id="CC2" visible="1" context="Catalog_SubType" index="0">Undefined</ColumnConst>
+	<ColumnConst desc="Part Name" dataType="string" unit="" name="PrtNm" id="CC3" visible="0" context="Catalog_PartName" index="0">AeccSimpleBox_Metric</ColumnConst>
+	<ColumnConst desc="Part Description" dataType="string" unit="" name="PrtD" id="CC4" visible="1" context="Catalog_PartDesc" index="0">Simple Box -- Metric</ColumnConst>
+	<ColumnConst desc="Part ID" dataType="string" unit="" name="PrtID" id="CC5" visible="0" context="Catalog_PartID" index="0">91CDFDA4-A109-4BAE-AD8D-85E7938B28A5</ColumnConst>
+	<ColumnConst desc="Data Version" dataType="string" unit="" name="DVer" id="CC6" visible="0" context="DataVersion" index="0">2.0</ColumnConst>
+	<ColumnConst desc="Content Type" dataType="int" unit="" name="CntTy" id="CC7" visible="0" context="Content_Type" index="0">4</ColumnConst>
+	<ColumnConst desc="Hide Part Flag" dataType="bool" unit="" name="HPrtF" id="CC8" visible="0" context="Catalog_PartHide" index="0">1</ColumnConst>
+	<ColumnConst desc="Structure Shape" dataType="string" unit="" name="SBS" id="CC9" visible="1" context="StructBoundingShape" index="0">BoundingShape_Box</ColumnConst>
+	<ColumnConst desc="Structure Length " dataType="float" unit="mm" name="SBSL" id="CC10" visible="1" context="StructLength" index="0">800.0000</ColumnConst>
+	<ColumnConst desc="Structure Width " dataType="float" unit="mm" name="SBSW" id="CC11" visible="1" context="StructWidth" index="0">600.0000</ColumnConst>
+	<ColumnConst desc="Wall Thickness" dataType="float" unit="mm" name="WTh" id="CC12" visible="1" context="WallThickness" index="0">100.0000</ColumnConst>
+	<ColumnConst desc="Floor Thickness" dataType="float" unit="mm" name="FTh" id="CC13" visible="1" context="FloorThickness" index="0">150.0000</ColumnConst>
+	<ColumnConst desc="Frame Height" dataType="float" unit="mm" name="SFH" id="CC14" visible="1" context="StructFrameHeight" index="0">100.0000</ColumnConst>
+	<ColumnConst desc="Custom Sizing Flag" dataType="bool" unit="" name="CusSF" id="CC15" visible="0" context="CustomPartSizing_Flag" index="0">0</ColumnConst>
+	<ColumnConst desc="Vertical Pipe Clearance" dataType="float" unit="mm" name="SVPC" id="CC16" visible="1" context="StructVertPipeClearance" index="0">150.0000</ColumnConst>
+	<ColumnCalc desc="Part Size Name" dataType="string" unit="" name="PrtSN" id="CCA0" visible="1" context="Catalog_PartSizeName" index="0">FormatNumber($SBSL,0) + " x " + FormatNumber($SBSW,0) + " x " + FormatNumber($SBSH,0) + " Simple Box"</ColumnCalc>
+	<ColumnCalc desc="Box Width" dataType="float" unit="mm" name="LenA1" id="CCA1" visible="1" context="Geometry_Distance2D" index="1">$SBSW</ColumnCalc>
+	<ColumnCalc desc="Box Length" dataType="float" unit="mm" name="LenA2" id="CCA2" visible="1" context="Geometry_Distance2D" index="2">$SBSL</ColumnCalc>
+	<ColumnCalc desc="Box Height" dataType="float" unit="mm" name="LenB1" id="CCA3" visible="1" context="Geometry_Distance3D" index="1">$SBSH</ColumnCalc>
+</LandPart>

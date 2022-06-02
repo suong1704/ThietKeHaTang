@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<LandPart desc="Part Table" version="1.0" xmlns:xlink="http://www.w3.org/1999/xlink" fixColumn="C1">
+    <ColumnConstView desc="Parameter-driven Display" id="CCV1" viewKey="3d" viewName="AeccPartRecipe" pathsRelativeTo="Table">
+        <Images>
+            <Image>
+                <URL xlink:title="Part Reference Image" xlink:href="PathToBmp.bmp"/>
+            </Image>
+        </Images>
+        <Recipe>PathToDwg.dwg</Recipe>
+    </ColumnConstView>
+</LandPart>

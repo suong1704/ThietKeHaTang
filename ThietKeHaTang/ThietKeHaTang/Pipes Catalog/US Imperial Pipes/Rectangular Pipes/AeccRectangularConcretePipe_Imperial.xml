@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+<LandPart desc="Part Table" version="1.0" xmlns:xlink="http://www.w3.org/1999/xlink" fixColumn="C1">
+	<ColumnConstView desc="Parameter-driven Display" id="CCV1" viewKey="3d" viewName="AeccPartRecipe" pathsRelativeTo="Table">
+		<Images>
+			<Image>
+				<URL xlink:title="Part Reference Image" xlink:href="AeccRectangularConcretePipe_Imperial.bmp"/>
+			</Image>
+		</Images>
+		<Recipe>AeccRectangularConcretePipe_Imperial.dwg</Recipe>
+	</ColumnConstView>
+	<ColumnUnique desc="Primary Key" datatype="string" name="UUID" visible="0">
+		<RowUnique id="r0">B859DD4E-0610-4740-90A0-782347F73AA2</RowUnique>
+		<RowUnique id="r1">6973BC10-DD1B-49E2-A214-D98ACC6CC875</RowUnique>
+		<RowUnique id="r2">30D143F7-D8A9-4A1D-912F-A78CD7D64F02</RowUnique>
+		<RowUnique id="r3">95F4D525-A55E-4A67-88F4-5B92D97D0AA6</RowUnique>
+		<RowUnique id="r4">DBEB90FC-42A7-4960-B11B-57082871F3C4</RowUnique>
+		<RowUnique id="r5">8C11D07A-816F-401C-8608-B121F50C64B5</RowUnique>
+		<RowUnique id="r6">97AC5288-FED0-4F7A-B01C-6BDE731446E9</RowUnique>
+		<RowUnique id="r7">11362924-F4EC-4232-8106-5D169E3968A8</RowUnique>
+		<RowUnique id="r8">85F155B4-BC59-4F40-BA6F-E318D43E96CB</RowUnique>
+		<RowUnique id="r9">EC0B89BE-44DC-4D38-A3E4-48FA91410B49</RowUnique>
+		<RowUnique id="r10">410ED146-861A-48A8-970F-0EC01A569051</RowUnique>
+		<RowUnique id="r11">2884892D-F254-47C8-A3C7-E41DE49C74B4</RowUnique>
+		<RowUnique id="r12">05316C5B-9CF7-4CAA-ABA5-FB532DB50A9C</RowUnique>
+		<RowUnique id="r13">208E02B0-A009-42DB-AC2A-A1B3B1C45E96</RowUnique>
+		<RowUnique id="r14">FF74F6F1-8874-450A-8AEC-9DE3C9CA8D1C</RowUnique>
+		<RowUnique id="r15">6E9D55D2-A530-4D1F-BE69-8A64392A3E6C</RowUnique>
+		<RowUnique id="r16">F90A3198-6322-49C4-93C7-94F98B814BCF</RowUnique>
+		<RowUnique id="r17">1BF6BC09-2881-4569-9689-52AE380E8B91</RowUnique>
+		<RowUnique id="r18">210D6F34-9213-412F-9B07-8C0F28E34839</RowUnique>
+		<RowUnique id="r19">14B83D4C-0643-4089-B1E9-0C3FF9AE256A</RowUnique>
+		<RowUnique id="r20">86DCA327-4E66-47DC-AE49-5AB1144F7EB1</RowUnique>
+		<RowUnique id="r21">C9B1B066-C32B-4653-9215-1DF24D2C19A7</RowUnique>
+		<RowUnique id="r22">13B211EB-5CCB-4460-A234-69DA32BAB161</RowUnique>
+		<RowUnique id="r23">CF30A9E4-FB74-455A-B991-DB9D63EEBEBF</RowUnique>
+		<RowUnique id="r24">C0206B44-DC11-4651-8B24-D9BD69A4C462</RowUnique>
+		<RowUnique id="r25">F704AD89-18F5-44E4-B0A9-54570C9F99DF</RowUnique>
+		<RowUnique id="r26">FBBF6C39-F8E1-41BC-B64A-A26A3552FDB9</RowUnique>
+		<RowUnique id="r27">743E2130-39E4-4F39-B4AD-1CB6CCC79FD4</RowUnique>
+		<RowUnique id="r28">68704264-165C-4A02-999A-343B2003E4D9</RowUnique>
+		<RowUnique id="r29">B459E9B4-BE52-411B-B64D-D39533F8ABD5</RowUnique>
+		<RowUnique id="r30">DB7D66A1-C265-4ADD-B64D-EBB9BE3D6678</RowUnique>
+		<RowUnique id="r31">1E37AC96-FC6F-40A5-9E2F-63E8195AC11E</RowUnique>
+		<RowUnique id="r32">EE5952E8-1FB7-44AC-91B8-585FF122E7B3</RowUnique>
+		<RowUnique id="r33">D6D40292-4AA5-40C1-B8C7-7022C613B606</RowUnique>
+		<RowUnique id="r34">1FAB3EE4-0982-49DE-A6B6-80B3E204083E</RowUnique>
+		<RowUnique id="r35">ED6D8F5C-5189-448E-AE2E-C7476BAB6240</RowUnique>
+		<RowUnique id="r36">EABF963C-5482-469D-AC58-D372BDD37CAE</RowUnique>
+		<RowUnique id="r37">C4D7FF18-C91A-41A9-9B79-E9A8AE779563</RowUnique>
+		<RowUnique id="r38">69E3B201-4FFC-46AC-AB48-56460C0CE207</RowUnique>
+		<RowUnique id="r39">A1A800CB-DE57-4068-9880-1C8F833610CB</RowUnique>
+		<RowUnique id="r40">6146D972-98E7-4FF7-93D0-134760543952</RowUnique>
+		<RowUnique id="r41">68D884F5-4E82-449F-A995-FE1578785B48</RowUnique>
+		<RowUnique id="r42">301DE810-4A0A-4DB3-A93B-E056DED50453</RowUnique>
+		<RowUnique id="r43">82CD9682-2D1F-4BC9-ABFA-25079CBD3DDE</RowUnique>
+		<RowUnique id="r44">75A4804B-E83F-470A-B987-337D37CA029B</RowUnique>
+		<RowUnique id="r45">7A73228A-FAEC-46D8-B801-6F52102B7F0B</RowUnique>
+		<RowUnique id="r46">F4C4B452-0CE0-4E24-BC9C-76DFADF3F392</RowUnique>
+		<RowUnique id="r47">9A688291-9281-4FDC-AFB5-9D9F836D5FFF</RowUnique>
+		<RowUnique id="r48">3F7303BC-C4D2-4485-ACD4-47528B68C5FD</RowUnique>
+		<RowUnique id="r49">E83438F1-33A2-4702-86D1-9765139822B6</RowUnique>
+		<RowUnique id="r50">854AA661-2C40-4D0B-83F4-7FED60B8CFE4</RowUnique>
+		<RowUnique id="r51">9C89A7B9-497E-4B7F-8CC5-FEA0174353D1</RowUnique>
+		<RowUnique id="r52">5307C431-C9F0-49FC-ABA7-97EB9083FF5D</RowUnique>
+		<RowUnique id="r53">4825D3F2-D093-4D69-9107-EBD14B963B96</RowUnique>
+		<RowUnique id="r54">018206B3-0BD6-482A-9D2B-6EEBD3925095</RowUnique>
+		<RowUnique id="r55">E6AB6856-03C2-4FF0-9BFA-2C8FC24829A5</RowUnique>
+		<RowUnique id="r56">F7AB9BE9-8392-4391-91FC-4DAA2A235922</RowUnique>
+		<RowUnique id="r57">A2CF6D14-722F-43A4-9E60-27BE2A636C0D</RowUnique>
+		<RowUnique id="r58">880C6B3F-01F9-4701-82C8-061B3FCA8591</RowUnique>
+		<RowUnique id="r59">E01604B6-B596-44AE-B5FF-E3C3C758686D</RowUnique>
+		<RowUnique id="r60">725E2058-5AA8-4C98-A1F9-64163DCAD623</RowUnique>
+		<RowUnique id="r61">A88DCC37-0935-4C7D-9A99-AF3F79BAA88E</RowUnique>
+		<RowUnique id="r62">EA2D9CC7-60B1-4681-AB99-C6725B22309C</RowUnique>
+		<RowUnique id="r63">33A12E69-A521-4D13-AEB1-C62A6DB7A3E5</RowUnique>
+		<RowUnique id="r64">1530294F-2658-4074-BDC3-257D7FF97157</RowUnique>
+		<RowUnique id="r65">E42FC4A5-C24B-4B7A-9A5D-3BD6881AEF13</RowUnique>
+		<RowUnique id="r66">E5232E22-7813-4F2B-83AD-BB8B00359F0C</RowUnique>
+		<RowUnique id="r67">6E4CC3C0-D41B-471E-861A-3C7F70B2A28E</RowUnique>
+		<RowUnique id="r68">C7354FAA-50A9-4475-B932-EDF2428D0210</RowUnique>
+		<RowUnique id="r69">EEA5E92B-6603-43B0-8624-E55B9453BF22</RowUnique>
+		<RowUnique id="r70">45BC41B4-461D-4439-8325-330B2823222D</RowUnique>
+	</ColumnUnique>
+	<Column desc="Inner Pipe Width" dataType="float" unit="inch" name="PIW" id="C1" visible="1" context="PipeInnerWidth" index="0">
+		<Row id="r0">24.0000</Row>
+		<Row id="r1">24.0000</Row>
+		<Row id="r2">24.0000</Row>
+		<Row id="r3">36.0000</Row>
+		<Row id="r4">36.0000</Row>
+		<Row id="r5">36.0000</Row>
+		<Row id="r6">36.0000</Row>
+		<Row id="r7">48.0000</Row>
+		<Row id="r8">48.0000</Row>
+		<Row id="r9">48.0000</Row>
+		<Row id="r10">48.0000</Row>
+		<Row id="r11">60.0000</Row>
+		<Row id="r12">60.0000</Row>
+		<Row id="r13">60.0000</Row>
+		<Row id="r14">60.0000</Row>
+		<Row id="r15">60.0000</Row>
+		<Row id="r16">60.0000</Row>
+		<Row id="r17">72.0000</Row>
+		<Row id="r18">72.0000</Row>
+		<Row id="r19">72.0000</Row>
+		<Row id="r20">72.0000</Row>
+		<Row id="r21">72.0000</Row>
+		<Row id="r22">72.0000</Row>
+		<Row id="r23">72.0000</Row>
+		<Row id="r24">72.0000</Row>
+		<Row id="r25">84.0000</Row>
+		<Row id="r26">84.0000</Row>
+		<Row id="r27">84.0000</Row>
+		<Row id="r28">84.0000</Row>
+		<Row id="r29">84.0000</Row>
+		<Row id="r30">84.0000</Row>
+		<Row id="r31">84.0000</Row>
+		<Row id="r32">84.0000</Row>
+		<Row id="r33">96.0000</Row>
+		<Row id="r34">96.0000</Row>
+		<Row id="r35">96.0000</Row>
+		<Row id="r36">96.0000</Row>
+		<Row id="r37">96.0000</Row>
+		<Row id="r38">96.0000</Row>
+		<Row id="r39">96.0000</Row>
+		<Row id="r40">108.0000</Row>
+		<Row id="r41">108.0000</Row>
+		<Row id="r42">108.0000</Row>
+		<Row id="r43">108.0000</Row>
+		<Row id="r44">108.0000</Row>
+		<Row id="r45">108.0000</Row>
+		<Row id="r46">108.0000</Row>
+		<Row id="r47">120.0000</Row>
+		<Row id="r48">120.0000</Row>
+		<Row id="r49">120.0000</Row>
+		<Row id="r50">120.0000</Row>
+		<Row id="r51">120.0000</Row>
+		<Row id="r52">120.0000</Row>
+		<Row id="r53">120.0000</Row>
+		<Row id="r54">132.0000</Row>
+		<Row id="r55">132.0000</Row>
+		<Row id="r56">132.0000</Row>
+		<Row id="r57">132.0000</Row>
+		<Row id="r58">132.0000</Row>
+		<Row id="r59">132.0000</Row>
+		<Row id="r60">132.0000</Row>
+		<Row id="r61">132.0000</Row>
+		<Row id="r62">144.0000</Row>
+		<Row id="r63">144.0000</Row>
+		<Row id="r64">144.0000</Row>
+		<Row id="r65">144.0000</Row>
+		<Row id="r66">144.0000</Row>
+		<Row id="r67">144.0000</Row>
+		<Row id="r68">144.0000</Row>
+		<Row id="r69">144.0000</Row>
+		<Row id="r70">144.0000</Row>
+	</Column>
+	<Column desc="Inner Pipe Height" dataType="float" unit="inch" name="PIH" id="C2" visible="1" context="PipeInnerHeight" index="0">
+		<Row id="r0">24.0000</Row>
+		<Row id="r1">36.0000</Row>
+		<Row id="r2">48.0000</Row>
+		<Row id="r3">24.0000</Row>
+		<Row id="r4">36.0000</Row>
+		<Row id="r5">48.0000</Row>
+		<Row id="r6">60.0000</Row>
+		<Row id="r7">24.0000</Row>
+		<Row id="r8">36.0000</Row>
+		<Row id="r9">48.0000</Row>
+		<Row id="r10">60.0000</Row>
+		<Row id="r11">24.0000</Row>
+		<Row id="r12">36.0000</Row>
+		<Row id="r13">48.0000</Row>
+		<Row id="r14">60.0000</Row>
+		<Row id="r15">72.0000</Row>
+		<Row id="r16">84.0000</Row>
+		<Row id="r17">24.0000</Row>
+		<Row id="r18">36.0000</Row>
+		<Row id="r19">48.0000</Row>
+		<Row id="r20">60.0000</Row>
+		<Row id="r21">72.0000</Row>
+		<Row id="r22">84.0000</Row>
+		<Row id="r23">96.0000</Row>
+		<Row id="r24">108.0000</Row>
+		<Row id="r25">24.0000</Row>
+		<Row id="r26">36.0000</Row>
+		<Row id="r27">48.0000</Row>
+		<Row id="r28">60.0000</Row>
+		<Row id="r29">72.0000</Row>
+		<Row id="r30">84.0000</Row>
+		<Row id="r31">96.0000</Row>
+		<Row id="r32">108.0000</Row>
+		<Row id="r33">36.0000</Row>
+		<Row id="r34">48.0000</Row>
+		<Row id="r35">60.0000</Row>
+		<Row id="r36">72.0000</Row>
+		<Row id="r37">84.0000</Row>
+		<Row id="r38">96.0000</Row>
+		<Row id="r39">108.0000</Row>
+		<Row id="r40">48.0000</Row>
+		<Row id="r41">60.0000</Row>
+		<Row id="r42">72.0000</Row>
+		<Row id="r43">84.0000</Row>
+		<Row id="r44">96.0000</Row>
+		<Row id="r45">108.0000</Row>
+		<Row id="r46">120.0000</Row>
+		<Row id="r47">48.0000</Row>
+		<Row id="r48">60.0000</Row>
+		<Row id="r49">72.0000</Row>
+		<Row id="r50">84.0000</Row>
+		<Row id="r51">96.0000</Row>
+		<Row id="r52">108.0000</Row>
+		<Row id="r53">120.0000</Row>
+		<Row id="r54">48.0000</Row>
+		<Row id="r55">60.0000</Row>
+		<Row id="r56">72.0000</Row>
+		<Row id="r57">84.0000</Row>
+		<Row id="r58">96.0000</Row>
+		<Row id="r59">108.0000</Row>
+		<Row id="r60">120.0000</Row>
+		<Row id="r61">132.0000</Row>
+		<Row id="r62">48.0000</Row>
+		<Row id="r63">60.0000</Row>
+		<Row id="r64">72.0000</Row>
+		<Row id="r65">84.0000</Row>
+		<Row id="r66">96.0000</Row>
+		<Row id="r67">108.0000</Row>
+		<Row id="r68">120.0000</Row>
+		<Row id="r69">132.0000</Row>
+		<Row id="r70">144.0000</Row>
+	</Column>
+	<Column desc="Wall Thickness" dataType="float" unit="inch" name="WTh" id="C3" visible="1" context="WallThickness" index="0">
+		<Row id="r0">4.0000</Row>
+		<Row id="r1">4.0000</Row>
+		<Row id="r2">4.0000</Row>
+		<Row id="r3">4.0000</Row>
+		<Row id="r4">4.0000</Row>
+		<Row id="r5">4.0000</Row>
+		<Row id="r6">4.0000</Row>
+		<Row id="r7">4.0000</Row>
+		<Row id="r8">4.0000</Row>
+		<Row id="r9">4.0000</Row>
+		<Row id="r10">6.0000</Row>
+		<Row id="r11">6.0000</Row>
+		<Row id="r12">6.0000</Row>
+		<Row id="r13">6.0000</Row>
+		<Row id="r14">6.0000</Row>
+		<Row id="r15">6.0000</Row>
+		<Row id="r16">6.0000</Row>
+		<Row id="r17">7.0000</Row>
+		<Row id="r18">7.0000</Row>
+		<Row id="r19">7.0000</Row>
+		<Row id="r20">7.0000</Row>
+		<Row id="r21">7.0000</Row>
+		<Row id="r22">7.0000</Row>
+		<Row id="r23">7.0000</Row>
+		<Row id="r24">7.0000</Row>
+		<Row id="r25">7.0000</Row>
+		<Row id="r26">7.0000</Row>
+		<Row id="r27">7.0000</Row>
+		<Row id="r28">7.0000</Row>
+		<Row id="r29">7.0000</Row>
+		<Row id="r30">8.0000</Row>
+		<Row id="r31">8.0000</Row>
+		<Row id="r32">10.0000</Row>
+		<Row id="r33">10.0000</Row>
+		<Row id="r34">10.0000</Row>
+		<Row id="r35">10.0000</Row>
+		<Row id="r36">10.0000</Row>
+		<Row id="r37">10.0000</Row>
+		<Row id="r38">10.0000</Row>
+		<Row id="r39">10.0000</Row>
+		<Row id="r40">10.0000</Row>
+		<Row id="r41">10.0000</Row>
+		<Row id="r42">10.0000</Row>
+		<Row id="r43">10.0000</Row>
+		<Row id="r44">10.0000</Row>
+		<Row id="r45">12.0000</Row>
+		<Row id="r46">12.0000</Row>
+		<Row id="r47">12.0000</Row>
+		<Row id="r48">12.0000</Row>
+		<Row id="r49">12.0000</Row>
+		<Row id="r50">12.0000</Row>
+		<Row id="r51">12.0000</Row>
+		<Row id="r52">12.0000</Row>
+		<Row id="r53">12.0000</Row>
+		<Row id="r54">14.0000</Row>
+		<Row id="r55">14.0000</Row>
+		<Row id="r56">14.0000</Row>
+		<Row id="r57">14.0000</Row>
+		<Row id="r58">14.0000</Row>
+		<Row id="r59">14.0000</Row>
+		<Row id="r60">14.0000</Row>
+		<Row id="r61">14.0000</Row>
+		<Row id="r62">16.0000</Row>
+		<Row id="r63">16.0000</Row>
+		<Row id="r64">16.0000</Row>
+		<Row id="r65">16.0000</Row>
+		<Row id="r66">16.0000</Row>
+		<Row id="r67">16.0000</Row>
+		<Row id="r68">16.0000</Row>
+		<Row id="r69">16.0000</Row>
+		<Row id="r70">16.0000</Row>
+	</Column>
+	<ColumnConstList desc="Manning Coefficient" dataType="float" unit="" name="ACMan" id="CCL1" visible="1" context="FlowAnalysis_Manning" index="0">
+		<Item id="i0">0.0130</Item>
+		<Item id="i1">0.0080</Item>
+		<Item id="i2">0.0090</Item>
+		<Item id="i3">0.0100</Item>
+		<Item id="i4">0.0110</Item>
+		<Item id="i5">0.0120</Item>
+		<Item id="i6">0.0140</Item>
+		<Item id="i7">0.0150</Item>
+	</ColumnConstList>
+	<ColumnConst desc="Part Domain" dataType="string" unit="" name="PDom" id="CC0" visible="0" context="Catalog_Domain" index="0">Pipe_Domain</ColumnConst>
+	<ColumnConst desc="Part Type" dataType="string" unit="" name="PTyp" id="CC1" visible="1" context="Catalog_PartType" index="0">Pipe</ColumnConst>
+	<ColumnConst desc="Part Subtype" dataType="string" unit="" name="PSTyp" id="CC2" visible="1" context="Catalog_SubType" index="0">Undefined</ColumnConst>
+	<ColumnConst desc="Part Name" dataType="string" unit="" name="PrtNm" id="CC3" visible="0" context="Catalog_PartName" index="0">AeccRectangularConcretePipe_Imperial</ColumnConst>
+	<ColumnConst desc="Part Description" dataType="string" unit="" name="PrtD" id="CC4" visible="1" context="Catalog_PartDesc" index="0">Concrete Box Culvert</ColumnConst>
+	<ColumnConst desc="Part ID" dataType="string" unit="" name="PrtID" id="CC5" visible="0" context="Catalog_PartID" index="0">4A71162E-70BB-4AE4-A7D5-0F9227F3D4B1</ColumnConst>
+	<ColumnConst desc="Data Version" dataType="string" unit="" name="DVer" id="CC6" visible="0" context="DataVersion" index="0">2.0</ColumnConst>
+	<ColumnConst desc="Content Type" dataType="int" unit="" name="CntTy" id="CC7" visible="0" context="Content_Type" index="0">4</ColumnConst>
+	<ColumnConst desc="Hide Part Flag" dataType="bool" unit="" name="HPrtF" id="CC8" visible="0" context="Catalog_PartHide" index="0">0</ColumnConst>
+	<ColumnConst desc="Cross Sectional Shape" dataType="string" unit="" name="CSS" id="CC9" visible="1" context="SweptShape" index="0">SweptShape_Rectangular</ColumnConst>
+	<ColumnConst desc="Material" dataType="string" unit="" name="Mat" id="CC10" visible="1" context="Material_Type" index="0">Reinforced Concrete Pipe</ColumnConst>
+	<ColumnCalc desc="Part Size Name" dataType="string" unit="" name="PrtSN" id="CCA0" visible="1" context="Catalog_PartSizeName" index="0">FormatNumber($PIW,0) + " x " + FormatNumber($PIH,0) + " inch Concrete Box Culvert"</ColumnCalc>
+	<ColumnCalc desc="Linear Center Offset" dataType="float" unit="inch" name="LenA1" id="CCA1" visible="1" context="Geometry_Distance2D" index="1">$PIH</ColumnCalc>
+	<ColumnCalc desc="2D Distance  2" dataType="float" unit="inch" name="LenA2" id="CCA2" visible="1" context="Geometry_Distance2D" index="2">$PIW</ColumnCalc>
+</LandPart>

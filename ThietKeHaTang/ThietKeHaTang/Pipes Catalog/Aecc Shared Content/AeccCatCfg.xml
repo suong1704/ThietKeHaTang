@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!-- AeccCatCfg.xml file must be located in the Shared Content Directory-->
+<AeccCatalogConfigSet>
+    <AeccTableExpandMode>1</AeccTableExpandMode>
+    <AeccXmlWhiteSpaceFormat>1</AeccXmlWhiteSpaceFormat>
+</AeccCatalogConfigSet>
